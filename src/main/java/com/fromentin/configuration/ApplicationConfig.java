@@ -17,6 +17,6 @@ public class ApplicationConfig extends Application {
     }
     
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(GenericResource.class);
+        resources.add(com.fromentin.controller.GenericResource.class);
     }    
 }

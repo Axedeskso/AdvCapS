@@ -3,7 +3,7 @@
 <world
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xsi:noNamespaceSchemaLocation='jaxb/world/worldSchema.xsd'>
-    <name>Adventure Capitalist</name>
+    <name>Football Capitalist</name>
     <logo>null</logo>
     <money>1</money>
     <score>0</score>
@@ -14,9 +14,9 @@
     <products>
         <product>
             <id>1</id>
-            <name>Pression</name>
-            <logo>img/dédé.jpg</logo>
-            <cout>3.735</cout>
+            <name>Gardien</name>
+            <logo>img/products/neuer.png</logo>
+            <cout>1</cout>
             <croissance>7</croissance>
             <revenu>1</revenu>
             <vitesse>500</vitesse>
@@ -25,8 +25,8 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Petit joueur</name>
-                    <logo>img/pression.jpg</logo>
+                    <name>Gardien réserviste</name>
+                    <logo>null</logo>
                     <seuil>10</seuil>
                     <idcible>1</idcible>
                     <ratio>1.5</ratio>
@@ -34,8 +34,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Envie d'aller aux toilettes ?</name>
-                    <logo>img/pression.jpg</logo>
+                    <name>Gardien remplaçant</name>
+                    <logo>null</logo>
                     <seuil>25</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
@@ -43,7 +43,7 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Tournée générale !</name>
+                    <name>Gardien titulaire</name>
                     <logo>img/pression.jpg</logo>
                     <seuil>50</seuil>
                     <idcible>1</idcible>
@@ -52,8 +52,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Cul sec !</name>
-                    <logo>img/pression.jpg</logo>
+                    <name>Un arrêt decisif</name>
+                    <logo>null</logo>
                     <seuil>75</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
@@ -61,8 +61,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>J'avais pas un verre ?</name>
-                    <logo>img/pression.jpg</logo>
+                    <name>Gardien de l'équipe nationale</name>
+                    <logo>null</logo>
                     <seuil>100</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
@@ -70,8 +70,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Je savais pas que tu avais un jumeau !?</name>
-                    <logo>img/pression.jpg</logo>
+                    <name>Le gant d'or</name>
+                    <logo>null</logo>
                     <seuil>150</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
@@ -79,8 +79,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>La pression, c'est que dans mon verre !</name>
-                    <logo>img/pression.jpg</logo>
+                    <name>Gardien champion d'Europe</name>
+                    <logo>null</logo>
                     <seuil>200</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
@@ -88,8 +88,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Il faut rentrer maintenant Monsieur</name>
-                    <logo>img/pression.jpg</logo>
+                    <name>Gardien champion du monde</name>
+                    <logo>null</logo>
                     <seuil>300</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
@@ -97,8 +97,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>C'est par où ma maison ?</name>
-                    <logo>img/pression.jpg</logo>
+                    <name>Meilleur gardien du monde</name>
+                    <logo>null</logo>
                     <seuil>400</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
@@ -109,19 +109,19 @@
         </product>
         <product>
             <id>2</id>
-            <name>Jägermeister</name>
-            <logo>img/jagermeister.jpg</logo>
+            <name>Défenseur</name>
+            <logo>img/products/ramos.png</logo>
             <cout>70</cout>
             <croissance>15</croissance>
             <revenu>10</revenu>
             <vitesse>3000</vitesse>
-            <quantite>0</quantite>
+            <quantite>50</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Tournée offerte !</name>
-                    <logo>img/jagermeister.jpg</logo>
+                    <name>Défenseur réserviste</name>
+                    <logo>null</logo>
                     <seuil>10</seuil>
                     <idcible>2</idcible>
                     <ratio>1.5</ratio>
@@ -129,8 +129,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Le sol est-il stable ?</name>
-                    <logo>img/jagermeister.jpg</logo>
+                    <name>Défenseur remplaçant</name>
+                    <logo>null</logo>
                     <seuil>25</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
@@ -138,8 +138,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>J'ai tout oublié</name>
-                    <logo>img/jagermeister.jpg</logo>
+                    <name>Défenseur titulaire</name>
+                    <logo>null</logo>
                     <seuil>50</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
@@ -147,8 +147,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>C'est qui cette personne dans mon lit !?</name>
-                    <logo>img/jagermeister.jpg</logo>
+                    <name>Tacle assassin</name>
+                    <logo>null</logo>
                     <seuil>75</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
@@ -156,8 +156,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Mais je suis où !?</name>
-                    <logo>img/jagermeister.jpg</logo>
+                    <name>Défenseur de l'équipe nationale</name>
+                    <logo>null</logo>
                     <seuil>100</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
@@ -165,8 +165,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Aïe ma tête !</name>
-                    <logo>img/jagermeister.jpg</logo>
+                    <name>Sauvetage sur la ligne</name>
+                    <logo>null</logo>
                     <seuil>150</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
@@ -174,8 +174,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Je suis garé où déjà ?</name>
-                    <logo>img/jagermeister.jpg</logo>
+                    <name>Défenseur champion d'Europe</name>
+                    <logo>null</logo>
                     <seuil>200</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
@@ -183,8 +183,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>C'est quoi tous ces tiquets de caisse ???</name>
-                    <logo>img/jagermeister.jpg</logo>
+                    <name>Défenseur champion du monde</name>
+                    <logo>null</logo>
                     <seuil>300</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
@@ -192,8 +192,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Pourquoi je suis à l'hôpital ?</name>
-                    <logo>img/jagermeister.jpg</logo>
+                    <name>Meilleur défenseur du monde</name>
+                    <logo>null</logo>
                     <seuil>400</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
@@ -204,8 +204,8 @@
         </product>
         <product>
             <id>3</id>
-            <name>Champagne</name>
-            <logo>img/champagne.jpg</logo>
+            <name>Milieu de terrain</name>
+            <logo>img/products/paugba.png</logo>
             <cout>720</cout>
             <croissance>14</croissance>
             <revenu>540</revenu>
@@ -215,8 +215,8 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>C'est cher !</name>
-                    <logo>img/champagne.jpg</logo>
+                    <name>Milieu réserviste</name>
+                    <logo>null</logo>
                     <seuil>10</seuil>
                     <idcible>3</idcible>
                     <ratio>1.5</ratio>
@@ -224,8 +224,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>C'est trop cher !</name>
-                    <logo>img/champagne.jpg</logo>
+                    <name>Milieu remplaçant</name>
+                    <logo>null</logo>
                     <seuil>25</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -233,8 +233,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>C'est BEAUCOUP trop cher !</name>
-                    <logo>img/champagne.jpg</logo>
+                    <name>Milieu titulaire</name>
+                    <logo>null</logo>
                     <seuil>50</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
@@ -242,8 +242,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>C'est rigolo les bubules</name>
-                    <logo>img/champagne.jpg</logo>
+                    <name>Coup franc décisif</name>
+                    <logo>null</logo>
                     <seuil>75</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
@@ -251,8 +251,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>J'peux mettre une chanson ?</name>
-                    <logo>img/champagne.jpg</logo>
+                    <name>Milieu de l'équipe nationale</name>
+                    <logo>null</logo>
                     <seuil>100</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
@@ -260,8 +260,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>J'ai un peu mal au ventre par contre</name>
-                    <logo>img/champagne.jpg</logo>
+                    <name>Le geste technique de l'année</name>
+                    <logo>null</logo>
                     <seuil>150</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -269,8 +269,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Ils sont où les toilettes ?</name>
-                    <logo>img/champagne.jpg</logo>
+                    <name>Milieu champion d'Europe</name>
+                    <logo>null</logo>
                     <seuil>200</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -278,8 +278,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>On rentre bientôt ?</name>
-                    <logo>img/champagne.jpg</logo>
+                    <name>Milieu champion du Monde</name>
+                    <logo>null</logo>
                     <seuil>300</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
@@ -287,8 +287,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>VITEEEEEEEEEE</name>
-                    <logo>img/champagne.jpg</logo>
+                    <name>Meilleur milieu du monde</name>
+                    <logo>null</logo>
                     <seuil>400</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -299,8 +299,8 @@
         </product>
         <product>
             <id>4</id>
-            <name>Pilier du bar</name>
-            <logo>img/dédé.jpg</logo>
+            <name>Attaquant</name>
+            <logo>img/products/mbappe.png</logo>
             <cout>8640</cout>
             <croissance>13</croissance>
             <revenu>4320</revenu>
@@ -310,8 +310,8 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Oh 10 sur 20 ça madame !</name>
-                    <logo>img/jpmarcel.jpg</logo>
+                    <name>Attaquant réserviste</name>
+                    <logo>null</logo>
                     <seuil>10</seuil>
                     <idcible>4</idcible>
                     <ratio>1.5</ratio>
@@ -319,8 +319,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Oh 20 sur 20 ça madame !</name>
-                    <logo>img/jpmarcel.jpg</logo>
+                    <name>Attanquant remplaçant</name>
+                    <logo>null</logo>
                     <seuil>25</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
@@ -328,8 +328,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Torchon chiffon carpette</name>
-                    <logo>img/jpmarcel.jpg</logo>
+                    <name>Attaquant titulaire</name>
+                    <logo>null</logo>
                     <seuil>50</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
@@ -337,8 +337,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Enlève l'orange, c'est ça qui ma rendu malade</name>
-                    <logo>img/jpmarcel.jpg</logo>
+                    <name>Frappe de mule</name>
+                    <logo>null</logo>
                     <seuil>75</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
@@ -346,8 +346,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Hé Dédé ! Une autre pinte !</name>
-                    <logo>img/jpmarcel.jpg</logo>
+                    <name>Attaquant de l'équipe nationale</name>
+                    <logo>null</logo>
                     <seuil>100</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
@@ -355,8 +355,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Mets le sur ma note</name>
-                    <logo>img/jpmarcel.jpg</logo>
+                    <name>But de l'année</name>
+                    <logo>null</logo>
                     <seuil>150</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
@@ -364,8 +364,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Ça arrive ce verre !?</name>
-                    <logo>img/jpmarcel.jpg</logo>
+                    <name>Attaquant champion d'Europe</name>
+                    <logo>null</logo>
                     <seuil>200</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
@@ -373,8 +373,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>T'as pas une clope Gérard ?</name>
-                    <logo>img/jpmarcel.jpg</logo>
+                    <name>Attaquant champion du Monde</name>
+                    <logo>null</logo>
                     <seuil>300</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
@@ -382,8 +382,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Comment ça j'ai pas le droit de me servir tout seul !?</name>
-                    <logo>img/jpmarcel.jpg</logo>
+                    <name>Meilleur attaquant du Monde</name>
+                    <logo>null</logo>
                     <seuil>400</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
@@ -394,8 +394,8 @@
         </product>
         <product>
             <id>5</id>
-            <name>Serveur</name>
-            <logo>img/serveur.jpg</logo>
+            <name>Entraineur</name>
+            <logo>img/products/zidane.png</logo>
             <cout>103680</cout>
             <croissance>12</croissance>
             <revenu>51840</revenu>
@@ -405,8 +405,8 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Oh un nouveau serveur !</name>
-                    <logo>img/serveur.jpg</logo>
+                    <name>Entraineur district</name>
+                    <logo>null</logo>
                     <seuil>10</seuil>
                     <idcible>5</idcible>
                     <ratio>1.5</ratio>
@@ -414,8 +414,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Oh une nouvelle serveuse !</name>
-                    <logo>img/serveur.jpg</logo>
+                    <name>Entraineur professionel</name>
+                    <logo>null</logo>
                     <seuil>25</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
@@ -423,8 +423,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Oh un noubo terver !</name>
-                    <logo>img/serveur.jpg</logo>
+                    <name>Entraineur champion national</name>
+                    <logo>null</logo>
                     <seuil>50</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
@@ -432,8 +432,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Il est pas mal le serveur !</name>
-                    <logo>img/serveur.jpg</logo>
+                    <name>Un remplacement victorieux</name>
+                    <logo>null</logo>
                     <seuil>75</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
@@ -441,8 +441,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Elle est pas mal la serveuse !</name>
-                    <logo>img/serveur.jpg</logo>
+                    <name>Selectioneur national</name>
+                    <logo>null</logo>
                     <seuil>100</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
@@ -450,8 +450,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Je peux avoir votre numéro ?</name>
-                    <logo>img/serveur.jpg</logo>
+                    <name>Une selection qui convientà tout le monde</name>
+                    <logo>null</logo>
                     <seuil>150</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
@@ -459,8 +459,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>J'ai eu son numéro !</name>
-                    <logo>img/serveur.jpg</logo>
+                    <name>Selectionneur champion d'Europe</name>
+                    <logo>null</logo>
                     <seuil>200</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
@@ -468,8 +468,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Je peux vous offrir un verre ?</name>
-                    <logo>img/serveur.jpg</logo>
+                    <name>Selectionneur champion du Monde</name>
+                    <logo>null</logo>
                     <seuil>300</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
@@ -477,8 +477,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Devines avec qui j'ai passé ma soirée d'hier...</name>
-                    <logo>img/serveur.jpg</logo>
+                    <name>Meilleur entraineur du Monde</name>
+                    <logo>null</logo>
                     <seuil>400</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
@@ -489,8 +489,8 @@
         </product>
         <product>
             <id>6</id>
-            <name>Bar</name>
-            <logo>img/bar.png</logo>
+            <name>Stade</name>
+            <logo>img/products/camp_nou.png</logo>
             <cout>1244160</cout>
             <croissance>11</croissance>
             <revenu>622080</revenu>
@@ -500,8 +500,8 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>T'as vu le nouveau bar ?</name>
-                    <logo>img/bar.png</logo>
+                    <name>Salle Léo Lagrange</name>
+                    <logo>null</logo>
                     <seuil>10</seuil>
                     <idcible>6</idcible>
                     <ratio>1.5</ratio>
@@ -509,8 +509,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Il est cool ce bar !</name>
-                    <logo>img/bar.png</logo>
+                    <name>Stade Raymond Kopa</name>
+                    <logo>null</logo>
                     <seuil>25</seuil>
                     <idcible>6</idcible>
                     <ratio>2</ratio>
@@ -518,8 +518,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>J'en peux plus de ce bar !</name>
-                    <logo>img/bar.png</logo>
+                    <name>Et 50 000 places supplémentaires</name>
+                    <logo>null</logo>
                     <seuil>50</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
@@ -527,8 +527,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Et si on y retournait ?</name>
-                    <logo>img/bar.png</logo>
+                    <name>Grand'Stade de Lille</name>
+                    <logo>null</logo>
                     <seuil>75</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
@@ -536,8 +536,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>C'est quoi tout ce monde !?</name>
-                    <logo>img/bar.png</logo>
+                    <name>Groupama Stadium</name>
+                    <logo>null</logo>
                     <seuil>100</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
@@ -545,8 +545,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Viens je connais des gens !</name>
-                    <logo>img/bar.png</logo>
+                    <name>Signal Iduna Park</name>
+                    <logo>null</logo>
                     <seuil>150</seuil>
                     <idcible>6</idcible>
                     <ratio>2</ratio>
@@ -554,8 +554,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Il côute combien votre bar ?</name>
-                    <logo>img/bar.png</logo>
+                    <name>Stade de France</name>
+                    <logo>null</logo>
                     <seuil>200</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
@@ -563,8 +563,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Je vais faire un crédit attendez</name>
-                    <logo>img/bar.png</logo>
+                    <name>Olympiastadion</name>
+                    <logo>null</logo>
                     <seuil>300</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
@@ -572,8 +572,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>Sinon on peut le parier au poker ?</name>
-                    <logo>img/bar.png</logo>
+                    <name>Stadio Bernabeu</name>
+                    <logo>null</logo>
                     <seuil>400</seuil>
                     <idcible>6</idcible>
                     <ratio>2</ratio>
@@ -585,8 +585,8 @@
     </products>
     <allunlocks>
         <pallier>
-            <name>Client régulier</name>
-            <logo>img/all.png</logo>
+            <name>Ma boulangerie, mon partenaire</name>
+            <logo>null</logo>
             <seuil>10</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -594,8 +594,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Client (très) régulier</name>
-            <logo>img/all.png</logo>
+            <name>Heineken, sponsor des remplaçants</name>
+            <logo>null</logo>
             <seuil>25</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -603,8 +603,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Client (trop) régulier</name>
-            <logo>img/all.png</logo>
+            <name>Le club se paye la Matmut</name>
+            <logo>null</logo>
             <seuil>50</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -612,8 +612,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Client (BEAUCOUP trop) régulier</name>
-            <logo>img/all.png</logo>
+            <name>On passe à la télé</name>
+            <logo>null</logo>
             <seuil>75</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -621,8 +621,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Bienvenu dans votre deuxième maison !</name>
-            <logo>img/all.png</logo>
+            <name>Canal + mais en crypté</name>
+            <logo>null</logo>
             <seuil>100</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -630,8 +630,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Vous touchez combien pour y mettre autant ?</name>
-            <logo>img/all.png</logo>
+            <name>Merci Bein Sports</name>
+            <logo>null</logo>
             <seuil>150</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -639,8 +639,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Réductions sur tous les verres !</name>
-            <logo>img/all.png</logo>
+            <name>Autorisation de transfert de la FIFA</name>
+            <logo>null</logo>
             <seuil>200</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -648,8 +648,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Réuductions sur toutes les bouteilles !</name>
-            <logo>img/all.png</logo>
+            <name>L'UEFA lève le fair-play financier</name>
+            <logo>null</logo>
             <seuil>250</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -657,8 +657,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Un verre sur deux offert !</name>
-            <logo>img/all.png</logo>
+            <name>Poutine actionnaire</name>
+            <logo>null</logo>
             <seuil>300</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -666,8 +666,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Une bouteille sur deux offerte !</name>
-            <logo>img/all.png</logo>
+            <name>Un chinois majoritaire</name>
+            <logo>null</logo>
             <seuil>400</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -675,8 +675,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>TOUT GRATUIT !!!</name>
-            <logo>img/all.png</logo>
+            <name>Qatari à la rescousse</name>
+            <logo>null</logo>
             <seuil>500</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -686,8 +686,8 @@
     </allunlocks>
     <upgrades>
         <pallier>
-            <name>La bière c'est de l'eau !</name>
-            <logo>img/pression.jpg</logo>
+            <name>Nouveaux gants</name>
+            <logo>null</logo>
             <seuil>250000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
@@ -695,8 +695,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>J'aime le Jagermeipffer</name>
-            <logo>img/jagermeister.jpg</logo>
+            <name>Travail de la tête</name>
+            <logo>null</logo>
             <seuil>500000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
@@ -704,8 +704,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Santé !</name>
-            <logo>img/champagne.jpg</logo>
+            <name>Passements de jambes améliorés</name>
+            <logo>null</logo>
             <seuil>1000000</seuil>
             <idcible>3</idcible>
             <ratio>3</ratio>
@@ -713,8 +713,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Hé patron !</name>
-            <logo>img/jpmarcel.jpg</logo>
+            <name>Coup de reins devastateur</name>
+            <logo>null</logo>
             <seuil>5000000</seuil>
             <idcible>4</idcible>
             <ratio>3</ratio>
@@ -722,8 +722,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>50 € s'il vous plaît</name>
-            <logo>img/serveur.jpg</logo>
+            <name>Une glacière pour le match</name>
+            <logo>null</logo>
             <seuil>10000000</seuil>
             <idcible>5</idcible>
             <ratio>3</ratio>
@@ -731,8 +731,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>On peut réserver ?</name>
-            <logo>img/bar.png</logo>
+            <name>Un stade complètement couvert</name>
+            <logo>null</logo>
             <seuil>25000000</seuil>
             <idcible>6</idcible>
             <ratio>3</ratio>
@@ -740,8 +740,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Bon client</name>
-            <logo>img/all.png</logo>
+            <name>Un marketing florissant</name>
+            <logo>null</logo>
             <seuil>500000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -749,8 +749,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Chef, une pinte !</name>
-            <logo>img/pression.jpg</logo>
+            <name>Arrêt d'une main</name>
+            <logo>null</logo>
             <seuil>10000000000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
@@ -758,8 +758,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Vous avez dit un 50 plantes ?</name>
-            <logo>img/jagermeister.jpg</logo>
+            <name>Epaule contre épaule</name>
+            <logo>null</logo>
             <seuil>50000000000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
@@ -767,8 +767,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Tournée générale !</name>
-            <logo>img/champagne.jpg</logo>
+            <name>Touche dans la surface de reparation</name>
+            <logo>null</logo>
             <seuil>250000000000</seuil>
             <idcible>3</idcible>
             <ratio>3</ratio>
@@ -776,8 +776,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Je voudrais un petit ricard dans un verre à ballon</name>
-            <logo>img/jpmarcel.jpg</logo>
+            <name>Coup franc de 30m</name>
+            <logo>null</logo>
             <seuil>1000000000000</seuil>
             <idcible>4</idcible>
             <ratio>3</ratio>
@@ -785,8 +785,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Une paille colorée offerte !</name>
-            <logo>img/serveur.jpg</logo>
+            <name>Interieur du pied</name>
+            <logo>null</logo>
             <seuil>20000000000000</seuil>
             <idcible>5</idcible>
             <ratio>3</ratio>
@@ -794,8 +794,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Tournée du patron !</name>
-            <logo>img/serveur.jpg</logo>
+            <name>Concert en levé de rideau</name>
+            <logo>null</logo>
             <seuil>50000000000000</seuil>
             <idcible>6</idcible>
             <ratio>3</ratio>
@@ -803,8 +803,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Très bon client</name>
-            <logo>img/all.png</logo>
+            <name>Boutique en ligne</name>
+            <logo>null</logo>
             <seuil>100000000000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -812,8 +812,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Il fait soif ici !</name>
-            <logo>img/ange.jpg</logo>
+            <name>Guy roux adjoint</name>
+            <logo>null</logo>
             <seuil>500000000000000</seuil>
             <idcible>-1</idcible>
             <ratio>1</ratio>
@@ -823,8 +823,8 @@
     </upgrades>
     <angelupgrades>
         <pallier>
-            <name>Premier sacrifice</name>
-            <logo>img/ange.jpg</logo>
+            <name>Lionel Messi</name>
+            <logo>img/angels/messi.png</logo>
             <seuil>10000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -832,8 +832,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Second sacrifice</name>
-            <logo>img/ange.jpg</logo>
+            <name>Cristiano Ronaldo</name>
+            <logo>img/angels/ronaldo.png</logo>
             <seuil>100000</seuil>
             <idcible>-1</idcible>
             <ratio>2</ratio>
@@ -841,8 +841,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Troisième sacrifice</name>
-            <logo>img/ange.jpg</logo>
+            <name>Ronaldinho</name>
+            <logo>img/angels/ronaldinho.png</logo>
             <seuil>100000000</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
@@ -850,8 +850,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Quatrième sacrifice</name>
-            <logo>img/ange.jpg</logo>
+            <name>Zinedine Zidane</name>
+            <logo>img/angels/zidane.png</logo>
             <seuil>100000000000</seuil>
             <idcible>-1</idcible>
             <ratio>3</ratio>
@@ -859,8 +859,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Cinquième sacrifice</name>
-            <logo>img/ange.jpg</logo>
+            <name>George Best</name>
+            <logo>img/angels/best.png</logo>
             <seuil>100000000000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -868,8 +868,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Sixième sacrifice</name>
-            <logo>img/ange.jpg</logo>
+            <name>Frand Beckenbauer</name>
+            <logo>img/angels/beckenbauer.png</logo>
             <seuil>100000000000000000</seuil>
             <idcible>-1</idcible>
             <ratio>2</ratio>
@@ -877,8 +877,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Septième sacrifice</name>
-            <logo>img/ange.jpg</logo>
+            <name>Alfredo Di Stefano</name>
+            <logo>img/angels/distefano.png</logo>
             <seuil>100000000000000000000</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
@@ -886,8 +886,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Huitième sacrifice</name>
-            <logo>img/ange.jpg</logo>
+            <name>Diego Maradonna</name>
+            <logo>img/angels/maradonna.png</logo>
             <seuil>100000000000000000000000</seuil>
             <idcible>-1</idcible>
             <ratio>4</ratio>
@@ -895,8 +895,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Neuvième sacrifice</name>
-            <logo>img/ange.jpg</logo>
+            <name>Johan Cruif</name>
+            <logo>img/angels/cruif.png</logo>
             <seuil>100000000000000000000000000</seuil>
             <idcible>0</idcible>
             <ratio>4</ratio>
@@ -904,8 +904,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Dernier sacrifice</name>
-            <logo>img/ange.jpg</logo>
+            <name>Pelé</name>
+            <logo>img/angels/pele.png</logo>
             <seuil>100000000000000000000000000000</seuil>
             <idcible>-1</idcible>
             <ratio>5</ratio>
@@ -915,8 +915,8 @@
     </angelupgrades>
     <managers>
         <pallier>
-            <name>Marc</name>
-            <logo>img/marc.jpg</logo>
+            <name>Fabien Barthez</name>
+            <logo>null</logo>
             <seuil>1000</seuil>
             <idcible>1</idcible>
             <ratio>0</ratio>
@@ -924,8 +924,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Max</name>
-            <logo>img/max.jpg</logo>
+            <name>Laurent Blanc</name>
+            <logo>null</logo>
             <seuil>15000</seuil>
             <idcible>2</idcible>
             <ratio>0</ratio>
@@ -933,8 +933,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Dédé</name>
-            <logo>img/dédé.jpg</logo>
+            <name>Robert Pires</name>
+            <logo>null</logo>
             <seuil>100000</seuil>
             <idcible>3</idcible>
             <ratio>0</ratio>
@@ -942,8 +942,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Marina</name>
-            <logo>img/marina.gif</logo>
+            <name>Thierry Henry</name>
+            <logo>null</logo>
             <seuil>500000</seuil>
             <idcible>4</idcible>
             <ratio>0</ratio>
@@ -951,8 +951,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Roger</name>
-            <logo>img/roger.jpg</logo>
+            <name>Aimé Jacquet</name>
+            <logo>null</logo>
             <seuil>1200000</seuil>
             <idcible>5</idcible>
             <ratio>0</ratio>
@@ -960,8 +960,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Jésus</name>
-            <logo>img/jesus.png</logo>
+            <name>Stade de France</name>
+            <logo>null</logo>
             <seuil>10000000</seuil>
             <idcible>6</idcible>
             <ratio>0</ratio>
