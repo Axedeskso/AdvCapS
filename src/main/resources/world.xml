@@ -586,7 +586,7 @@
     <allunlocks>
         <pallier>
             <name>Ma boulangerie, mon partenaire</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/1.png</logo>
             <seuil>10</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -595,7 +595,7 @@
         </pallier>
         <pallier>
             <name>Heineken, sponsor des remplaçants</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/2.png</logo>
             <seuil>25</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -604,7 +604,7 @@
         </pallier>
         <pallier>
             <name>Le club se paye la Matmut</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/3.png</logo>
             <seuil>50</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -613,7 +613,7 @@
         </pallier>
         <pallier>
             <name>On passe à la télé</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/4.png</logo>
             <seuil>75</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -622,7 +622,7 @@
         </pallier>
         <pallier>
             <name>Canal + mais en crypté</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/5.png</logo>
             <seuil>100</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -631,7 +631,7 @@
         </pallier>
         <pallier>
             <name>Merci Bein Sports</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/6.png</logo>
             <seuil>150</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -640,7 +640,7 @@
         </pallier>
         <pallier>
             <name>Autorisation de transfert de la FIFA</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/7.png</logo>
             <seuil>200</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -649,7 +649,7 @@
         </pallier>
         <pallier>
             <name>L'UEFA lève le fair-play financier</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/8.png</logo>
             <seuil>250</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -658,7 +658,7 @@
         </pallier>
         <pallier>
             <name>Poutine actionnaire</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/9.png</logo>
             <seuil>300</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -667,7 +667,7 @@
         </pallier>
         <pallier>
             <name>Un chinois majoritaire</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/10.png</logo>
             <seuil>400</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -676,7 +676,7 @@
         </pallier>
         <pallier>
             <name>Qatari à la rescousse</name>
-            <logo>null</logo>
+            <logo>img/allunlocks/11.png</logo>
             <seuil>500</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
