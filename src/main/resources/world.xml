@@ -4,7 +4,7 @@
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xsi:noNamespaceSchemaLocation='jaxb/world/worldSchema.xsd'>
     <name>Football Capitalist</name>
-    <logo>null</logo>
+    <logo>img/logo.png</logo>
     <money>1</money>
     <score>0</score>
     <totalangels>0</totalangels>
@@ -687,7 +687,7 @@
     <upgrades>
         <pallier>
             <name>Nouveaux gants</name>
-            <logo>null</logo>
+            <logo>img/upgrades/1.png</logo>
             <seuil>250000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
@@ -696,7 +696,7 @@
         </pallier>
         <pallier>
             <name>Travail de la tête</name>
-            <logo>null</logo>
+            <logo>img/upgrades/2.png</logo>
             <seuil>500000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
@@ -705,7 +705,7 @@
         </pallier>
         <pallier>
             <name>Passements de jambes améliorés</name>
-            <logo>null</logo>
+            <logo>img/upgrades/3.png</logo>
             <seuil>1000000</seuil>
             <idcible>3</idcible>
             <ratio>3</ratio>
@@ -714,7 +714,7 @@
         </pallier>
         <pallier>
             <name>Coup de reins devastateur</name>
-            <logo>null</logo>
+            <logo>img/upgrades/4.png</logo>
             <seuil>5000000</seuil>
             <idcible>4</idcible>
             <ratio>3</ratio>
@@ -723,7 +723,7 @@
         </pallier>
         <pallier>
             <name>Une glacière pour le match</name>
-            <logo>null</logo>
+            <logo>img/upgrades/5.png</logo>
             <seuil>10000000</seuil>
             <idcible>5</idcible>
             <ratio>3</ratio>
@@ -732,7 +732,7 @@
         </pallier>
         <pallier>
             <name>Un stade complètement couvert</name>
-            <logo>null</logo>
+            <logo>img/upgrades/6.png</logo>
             <seuil>25000000</seuil>
             <idcible>6</idcible>
             <ratio>3</ratio>
@@ -741,7 +741,7 @@
         </pallier>
         <pallier>
             <name>Un marketing florissant</name>
-            <logo>null</logo>
+            <logo>img/upgrades/7.png</logo>
             <seuil>500000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -750,7 +750,7 @@
         </pallier>
         <pallier>
             <name>Arrêt d'une main</name>
-            <logo>null</logo>
+            <logo>img/upgrades/8.png</logo>
             <seuil>10000000000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
@@ -759,7 +759,7 @@
         </pallier>
         <pallier>
             <name>Epaule contre épaule</name>
-            <logo>null</logo>
+            <logo>img/upgrades/9.png</logo>
             <seuil>50000000000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
@@ -768,7 +768,7 @@
         </pallier>
         <pallier>
             <name>Touche dans la surface de reparation</name>
-            <logo>null</logo>
+            <logo>img/upgrades/10.png</logo>
             <seuil>250000000000</seuil>
             <idcible>3</idcible>
             <ratio>3</ratio>
@@ -777,7 +777,7 @@
         </pallier>
         <pallier>
             <name>Coup franc de 30m</name>
-            <logo>null</logo>
+            <logo>img/upgrades/11.png</logo>
             <seuil>1000000000000</seuil>
             <idcible>4</idcible>
             <ratio>3</ratio>
@@ -786,7 +786,7 @@
         </pallier>
         <pallier>
             <name>Interieur du pied</name>
-            <logo>null</logo>
+            <logo>img/upgrades/12.png</logo>
             <seuil>20000000000000</seuil>
             <idcible>5</idcible>
             <ratio>3</ratio>
@@ -795,7 +795,7 @@
         </pallier>
         <pallier>
             <name>Concert en levé de rideau</name>
-            <logo>null</logo>
+            <logo>img/upgrades/13.png</logo>
             <seuil>50000000000000</seuil>
             <idcible>6</idcible>
             <ratio>3</ratio>
@@ -804,7 +804,7 @@
         </pallier>
         <pallier>
             <name>Boutique en ligne</name>
-            <logo>null</logo>
+            <logo>img/upgrades/14.png</logo>
             <seuil>100000000000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -813,7 +813,7 @@
         </pallier>
         <pallier>
             <name>Guy roux adjoint</name>
-            <logo>null</logo>
+            <logo>img/upgrades/15.png</logo>
             <seuil>500000000000000</seuil>
             <idcible>-1</idcible>
             <ratio>1</ratio>
@@ -916,7 +916,7 @@
     <managers>
         <pallier>
             <name>Fabien Barthez</name>
-            <logo>null</logo>
+            <logo>img/managers/barthez.png</logo>
             <seuil>1000</seuil>
             <idcible>1</idcible>
             <ratio>0</ratio>
@@ -925,7 +925,7 @@
         </pallier>
         <pallier>
             <name>Laurent Blanc</name>
-            <logo>null</logo>
+            <logo>img/managers/blanc.png</logo>
             <seuil>15000</seuil>
             <idcible>2</idcible>
             <ratio>0</ratio>
@@ -934,7 +934,7 @@
         </pallier>
         <pallier>
             <name>Robert Pires</name>
-            <logo>null</logo>
+            <logo>img/managers/pires.png</logo>
             <seuil>100000</seuil>
             <idcible>3</idcible>
             <ratio>0</ratio>
@@ -943,7 +943,7 @@
         </pallier>
         <pallier>
             <name>Thierry Henry</name>
-            <logo>null</logo>
+            <logo>img/managers/henry.png</logo>
             <seuil>500000</seuil>
             <idcible>4</idcible>
             <ratio>0</ratio>
@@ -952,7 +952,7 @@
         </pallier>
         <pallier>
             <name>Aimé Jacquet</name>
-            <logo>null</logo>
+            <logo>img/managers/jacquet.png</logo>
             <seuil>1200000</seuil>
             <idcible>5</idcible>
             <ratio>0</ratio>
@@ -961,7 +961,7 @@
         </pallier>
         <pallier>
             <name>Stade de France</name>
-            <logo>null</logo>
+            <logo>img/managers/sdf.png</logo>
             <seuil>10000000</seuil>
             <idcible>6</idcible>
             <ratio>0</ratio>
