@@ -15,7 +15,7 @@
         <product>
             <id>1</id>
             <name>Gardien</name>
-            <logo>img/products/neuer.png</logo>
+            <logo>img/products/1.png</logo>
             <cout>1</cout>
             <croissance>7</croissance>
             <revenu>1</revenu>
@@ -110,7 +110,7 @@
         <product>
             <id>2</id>
             <name>Défenseur</name>
-            <logo>img/products/ramos.png</logo>
+            <logo>img/products/2.png</logo>
             <cout>70</cout>
             <croissance>15</croissance>
             <revenu>10</revenu>
@@ -205,7 +205,7 @@
         <product>
             <id>3</id>
             <name>Milieu de terrain</name>
-            <logo>img/products/paugba.png</logo>
+            <logo>img/products/3.png</logo>
             <cout>720</cout>
             <croissance>14</croissance>
             <revenu>540</revenu>
@@ -300,7 +300,7 @@
         <product>
             <id>4</id>
             <name>Attaquant</name>
-            <logo>img/products/mbappe.png</logo>
+            <logo>img/products/4.png</logo>
             <cout>8640</cout>
             <croissance>13</croissance>
             <revenu>4320</revenu>
@@ -395,7 +395,7 @@
         <product>
             <id>5</id>
             <name>Entraineur</name>
-            <logo>img/products/zidane.png</logo>
+            <logo>img/products/5.png</logo>
             <cout>103680</cout>
             <croissance>12</croissance>
             <revenu>51840</revenu>
@@ -490,7 +490,7 @@
         <product>
             <id>6</id>
             <name>Stade</name>
-            <logo>img/products/camp_nou.png</logo>
+            <logo>img/products/6.png</logo>
             <cout>1244160</cout>
             <croissance>11</croissance>
             <revenu>622080</revenu>
