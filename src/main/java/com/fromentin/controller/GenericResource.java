@@ -26,7 +26,7 @@ public class GenericResource {
     }
 
     @GET
-    @Path("world/xml")
+    @Path("world")
     @Produces("application/xml")
     public Response getXml(@Context HttpServletRequest request) {
         String username =  request.getHeader("X-user");
@@ -42,7 +42,7 @@ public class GenericResource {
     }
     
     @GET
-    @Path("world-json")
+    @Path("world")
     @Produces("application/json")
     public Response getXmlJson(@Context HttpServletRequest request) {
         String username =  request.getHeader("X-user");
@@ -56,4 +56,13 @@ public class GenericResource {
         }
         return Response.status(Response.Status.NOT_FOUND).build();
     }
+    
+    
+//    PUT PRODUCTS
+    
+//    PUT UPGRADES
+    
+//    PUT ANGELS
+    
+//    DELETE WORLDng 
 }

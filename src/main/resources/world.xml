@@ -9,7 +9,7 @@
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
-    <angelbonus>2</angelbonus>
+    <angelbonus>0</angelbonus>
     <lastupdate>0</lastupdate>
     <products>
         <product>
@@ -19,7 +19,7 @@
             <cout>1</cout>
             <croissance>7</croissance>
             <revenu>1</revenu>
-            <vitesse>500</vitesse>
+            <vitesse>30000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -114,8 +114,8 @@
             <cout>70</cout>
             <croissance>15</croissance>
             <revenu>10</revenu>
-            <vitesse>3000</vitesse>
-            <quantite>50</quantite>
+            <vitesse>60000</vitesse>
+            <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
@@ -209,7 +209,7 @@
             <cout>720</cout>
             <croissance>14</croissance>
             <revenu>540</revenu>
-            <vitesse>6000</vitesse>
+            <vitesse>300000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -304,7 +304,7 @@
             <cout>8640</cout>
             <croissance>13</croissance>
             <revenu>4320</revenu>
-            <vitesse>12000</vitesse>
+            <vitesse>600000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -399,7 +399,7 @@
             <cout>103680</cout>
             <croissance>12</croissance>
             <revenu>51840</revenu>
-            <vitesse>24000</vitesse>
+            <vitesse>1800000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -493,8 +493,8 @@
             <logo>img/products/6.png</logo>
             <cout>1244160</cout>
             <croissance>11</croissance>
-            <revenu>622080</revenu>
-            <vitesse>96000</vitesse>
+            <revenu>6220800</revenu>
+            <vitesse>3600000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
