@@ -11,11 +11,13 @@ import javax.xml.bind.Unmarshaller;
 
 public class Services {
 
+    //LECTURE DU FICHIER XML
+    
    //private World readWorldFromXml(String username) throws JAXBException {
    private World readWorldFromXml() throws JAXBException {
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Unmarshaller u = cont.createUnmarshaller();
-        World world = null;
+        World world;
         try {
             // world = (World) u.unmarshal(new File(username+"-world.xml"));
             world = (World) u.unmarshal(new File("world.xml"));
@@ -26,16 +28,19 @@ public class Services {
         return world;
     }
 
+   //SAUVEGARDE DU FICHIER XML
+   
     private void saveWorldToXml(World world) throws JAXBException {
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Marshaller m = cont.createMarshaller();
         m.marshal(world, new File("world.xml"));
     }
     
+    //OBTENTION DU FICHIER XML
+    
     //public World getWorld(String username) throws JAXBException {
     public World getWorld() throws JAXBException {
         World world = readWorldFromXml();
-        //majScore(world);
         world.setLastupdate(System.currentTimeMillis());
         //saveWorldToXml(world, username);
         return world;

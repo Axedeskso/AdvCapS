@@ -19,7 +19,7 @@
             <cout>1</cout>
             <croissance>7</croissance>
             <revenu>1</revenu>
-            <vitesse>30000</vitesse>
+            <vitesse>60000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -114,7 +114,7 @@
             <cout>70</cout>
             <croissance>15</croissance>
             <revenu>10</revenu>
-            <vitesse>60000</vitesse>
+            <vitesse>300000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
