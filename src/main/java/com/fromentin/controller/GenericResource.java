@@ -2,14 +2,19 @@ package com.fromentin.controller;
 
 import com.fromentin.service.Services;
 import com.google.gson.Gson;
+import generated.PallierType;
+import generated.ProductType;
 import generated.World;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.http.HttpServletRequest;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
 import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 import javax.xml.bind.JAXBException;
@@ -59,10 +64,38 @@ public class GenericResource {
     
     
 //    PUT PRODUCTS
-    
+    @PUT
+    @Path("product")
+    @Consumes("application/json")
+    public void putProduct(String data, @Context HttpServletRequest request) throws JAXBException {
+        String username =  request.getHeader("X-user");
+        ProductType product = new Gson().fromJson(data, ProductType.class);
+        services.updateProduct(product, username);
+    }
 //    PUT UPGRADES
-    
+    @PUT
+    @Path("upgrade")
+    @Consumes("application/json")
+    public void putUpgrade(String data, @Context HttpServletRequest request) throws JAXBException {
+        String username =  request.getHeader("X-user");
+        PallierType upgrade = new Gson().fromJson(data, PallierType.class);
+        services.updateUpgrade(upgrade, username);
+    }
 //    PUT ANGELS
-    
+    @PUT
+    @Path("angelupgrade")
+    @Consumes("application/json")
+    public void putAngelUpgrade(String data, @Context HttpServletRequest request) throws JAXBException {
+        String username =  request.getHeader("X-user");
+        PallierType angelupgrade = new Gson().fromJson(data, PallierType.class);
+        services.updateAngelUpgrade(angelupgrade, username);
+    }
 //    DELETE WORLDng 
+    @DELETE
+    @Path("world")
+    @Consumes("application/json")
+    public void deleteWorld(@Context HttpServletRequest request) throws JAXBException {
+        String username = request.getHeader("X-user");
+        services.resetWorld(username);
+    }
 }

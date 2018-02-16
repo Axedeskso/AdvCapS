@@ -1,5 +1,7 @@
 package com.fromentin.service;
 
+import generated.PallierType;
+import generated.ProductType;
 import generated.World;
 import java.io.File;
 import java.io.InputStream;
@@ -44,6 +46,22 @@ public class Services {
         world.setLastupdate(System.currentTimeMillis());
         //saveWorldToXml(world, username);
         return world;
+    }
+
+    public Boolean updateProduct(ProductType product, String username) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void updateUpgrade(PallierType upgrade, String username) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void updateAngelUpgrade(PallierType angelupgrade, String username) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void resetWorld(String username) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
