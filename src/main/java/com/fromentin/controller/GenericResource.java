@@ -37,8 +37,7 @@ public class GenericResource {
         String username =  request.getHeader("X-user");
         World world;
         try {
-            //world = services.getWorld(username);
-            world = services.getWorld();
+            world = services.getWorld(username);
             return Response.ok(world).build();
         } catch (JAXBException ex) {
             Logger.getLogger(GenericResource.class.getName()).log(Level.SEVERE, null, ex);
@@ -53,8 +52,7 @@ public class GenericResource {
         String username =  request.getHeader("X-user");
         //World world = null ;
         try {
-            //World world = services.getWorld(username);
-            World world = services.getWorld();
+            World world = services.getWorld(username);
             return Response.ok(new Gson().toJson(world)).build();
         } catch (JAXBException ex) {
             Logger.getLogger(GenericResource.class.getName()).log(Level.SEVERE, null, ex);
@@ -90,7 +88,7 @@ public class GenericResource {
         PallierType angelupgrade = new Gson().fromJson(data, PallierType.class);
         services.updateAngelUpgrade(angelupgrade, username);
     }
-//    DELETE WORLDng 
+//    DELETE WORLD 
     @DELETE
     @Path("world")
     @Consumes("application/json")
