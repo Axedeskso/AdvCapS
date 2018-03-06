@@ -70,6 +70,16 @@ public class GenericResource {
         ProductType product = new Gson().fromJson(data, ProductType.class);
         services.updateProduct(product, username);
     }
+ //    PUT MANAGER   
+    @PUT
+    @Path("manager")
+    @Consumes("application/json")
+    public void putManager(String data, @Context HttpServletRequest request) throws JAXBException {
+        String username =  request.getHeader("X-user");
+        PallierType manager = new Gson().fromJson(data, PallierType.class);
+        services.updateManager(manager, username);
+    }
+    
 //    PUT UPGRADES
     @PUT
     @Path("upgrade")

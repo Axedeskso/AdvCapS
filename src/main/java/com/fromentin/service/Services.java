@@ -15,14 +15,12 @@ public class Services {
 
     //LECTURE DU FICHIER XML
     
-   //private World readWorldFromXml(String username) throws JAXBException {
    private World readWorldFromXml(String username) throws JAXBException {
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Unmarshaller u = cont.createUnmarshaller();
         World world;
         try {
-            // world = (World) u.unmarshal(new File(username+"-world.xml"));
-            world = (World) u.unmarshal(new File(username+"world.xml"));
+            world = (World) u.unmarshal(new File(username+"-world.xml"));
         } catch(UnmarshalException e) {
             InputStream input = getClass().getClassLoader().getResourceAsStream("world.xml");
             world = (World) u.unmarshal(input);
@@ -35,7 +33,7 @@ public class Services {
     private void saveWorldToXml(World world, String username) throws JAXBException {
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Marshaller m = cont.createMarshaller();
-        m.marshal(world, new File(username+"world.xml"));
+        m.marshal(world, new File(username+"-world.xml"));
     }
     
     //OBTENTION DU FICHIER XML
@@ -200,6 +198,39 @@ public class Services {
         return true;
     }
 
+    /**
+     * 
+     * @param newmanager
+     * @param username
+     * @return
+     * @throws JAXBException 
+     */
+    public Boolean updateManager(PallierType newmanager, String username) throws JAXBException {
+        World world = getWorld(username);
+        PallierType manager = findManagerByName(world, newmanager.getName());
+        if(manager == null) {
+            return false;
+        }
+        manager.setUnlocked(true);
+        ProductType product = findProductById(world, manager.getIdcible());
+        if(product == null) {
+            return false;
+        }
+        product.setManagerUnlocked(true);
+        world.setMoney(world.getMoney()-manager.getSeuil());
+        
+        world.setLastupdate(System.currentTimeMillis());
+        saveWorldToXml(world, username);
+        return true;
+    }
+    
+    /**
+     * 
+     * @param newupgrade
+     * @param username
+     * @return
+     * @throws JAXBException 
+     */
     public Boolean updateUpgrade(PallierType newupgrade, String username) throws JAXBException{
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         World world = getWorld(username);
@@ -247,7 +278,14 @@ public class Services {
         saveWorldToXml(world, username);
         return true;
     }
-
+    
+    /**
+     * 
+     * @param newangelupgrade
+     * @param username
+     * @return
+     * @throws JAXBException 
+     */
     public Boolean updateAngelUpgrade(PallierType newangelupgrade, String username) throws JAXBException{
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         World world = getWorld(username);
@@ -281,6 +319,11 @@ public class Services {
         return true;
     }
     
+    /**
+     * 
+     * @param username
+     * @throws JAXBException 
+     */
     public void resetWorld(String username) throws JAXBException {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         World world = getWorld(username);
@@ -319,4 +362,15 @@ public class Services {
         }
         return null;
     }
+
+    private PallierType findManagerByName(World world, String name) {
+        for(PallierType manager: world.getManagers().getPallier()) {
+            if(manager.getName().equals(name)) {
+                return manager;
+            }
+        }
+        return null;
+    }
+
+    
 }
