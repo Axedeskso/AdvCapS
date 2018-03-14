@@ -56,7 +56,7 @@ public class Services {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         World world = getWorld(username);
         /**
-         * Truver dans ce monde le produit équivalent à celui passé
+         * Trouver dans ce monde le produit équivalent à celui passé
          * en paramètre
          */
         ProductType product = findProductById(world, newproduct.getId());
@@ -200,9 +200,9 @@ public class Services {
 
     /**
      * 
-     * @param newmanager
-     * @param username
-     * @return
+     * @param newmanager, prends en paramètre le le manager
+     * @param username, prend en paramètre le pseudo du joueur
+     * @return false si l'action n'a pas pu être traitée
      * @throws JAXBException 
      */
     public Boolean updateManager(PallierType newmanager, String username) throws JAXBException {
@@ -228,7 +228,7 @@ public class Services {
      * 
      * @param newupgrade
      * @param username
-     * @return
+     * @return 
      * @throws JAXBException 
      */
     public Boolean updateUpgrade(PallierType newupgrade, String username) throws JAXBException{
