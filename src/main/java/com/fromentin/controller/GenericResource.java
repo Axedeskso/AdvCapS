@@ -19,6 +19,13 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 import javax.xml.bind.JAXBException;
 
+
+/**
+ * 
+ * @author Hassani
+ * ADRESSE DU WORLD : http://localhost:8080/AdvCapS/webresources/world
+ * 
+ */
 @Path("")
 public class GenericResource {
 
@@ -29,7 +36,11 @@ public class GenericResource {
     public GenericResource() {
         this.services = new Services();
     }
-
+    /**
+     * 
+     * @param request retourne au client une représentation du monde sous format xml
+     * @return 
+     */
     @GET
     @Path("world")
     @Produces("application/xml")
@@ -45,6 +56,11 @@ public class GenericResource {
         return Response.status(Response.Status.NOT_FOUND).build();
     }
     
+    /**
+     * 
+     * @param request retourne au client une représentation du monde sous format Gson
+     * @return 
+     */
     @GET
     @Path("world")
     @Produces("application/json")
@@ -61,7 +77,7 @@ public class GenericResource {
     }
     
     
-//    PUT PRODUCTS
+//    PUT PRODUCT
     @PUT
     @Path("product")
     @Consumes("application/json")
@@ -80,7 +96,7 @@ public class GenericResource {
         services.updateManager(manager, username);
     }
     
-//    PUT UPGRADES
+//    PUT UPGRADE
     @PUT
     @Path("upgrade")
     @Consumes("application/json")
@@ -89,7 +105,7 @@ public class GenericResource {
         PallierType upgrade = new Gson().fromJson(data, PallierType.class);
         services.updateUpgrade(upgrade, username);
     }
-//    PUT ANGELS
+//    PUT ANGEL
     @PUT
     @Path("angelupgrade")
     @Consumes("application/json")

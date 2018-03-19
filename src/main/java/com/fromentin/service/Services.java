@@ -11,6 +11,10 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.UnmarshalException;
 import javax.xml.bind.Unmarshaller;
 
+/**
+ * 
+ * @author Hassani
+ */
 public class Services {
 
     //LECTURE DU FICHIER XML
