@@ -5,7 +5,7 @@
     xsi:noNamespaceSchemaLocation='jaxb/world/worldSchema.xsd'>
     <name>Football Capitalist</name>
     <logo>img/logo.png</logo>
-    <money>1</money>
+    <money>1500</money>
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
@@ -19,7 +19,7 @@
             <cout>1</cout>
             <croissance>7</croissance>
             <revenu>1</revenu>
-            <vitesse>60000</vitesse>
+            <vitesse>10000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -27,7 +27,7 @@
                 <pallier>
                     <name>Gardien réserviste</name>
                     <logo>img/products/1/1.png</logo>
-                    <seuil>10</seuil>
+                    <seuil>5</seuil>
                     <idcible>1</idcible>
                     <ratio>1.5</ratio>
                     <typeratio>GAIN</typeratio>
@@ -36,7 +36,7 @@
                 <pallier>
                     <name>Gardien remplaçant</name>
                     <logo>img/products/1/2.png</logo>
-                    <seuil>25</seuil>
+                    <seuil>10</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
                     <typeratio>VITESSE</typeratio>
@@ -45,7 +45,7 @@
                 <pallier>
                     <name>Gardien titulaire</name>
                     <logo>img/products/1/3.png</logo>
-                    <seuil>50</seuil>
+                    <seuil>20</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
                     <typeratio>GAIN</typeratio>
@@ -54,7 +54,7 @@
                 <pallier>
                     <name>Un arrêt decisif</name>
                     <logo>img/products/1/4.png</logo>
-                    <seuil>75</seuil>
+                    <seuil>25</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
                     <typeratio>GAIN</typeratio>
@@ -63,7 +63,7 @@
                 <pallier>
                     <name>Gardien de l'équipe nationale</name>
                     <logo>img/products/1/5.png</logo>
-                    <seuil>100</seuil>
+                    <seuil>30</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
                     <typeratio>GAIN</typeratio>
@@ -72,7 +72,7 @@
                 <pallier>
                     <name>Le gant d'or</name>
                     <logo>img/products/1/6.png</logo>
-                    <seuil>150</seuil>
+                    <seuil>35</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
                     <typeratio>GAIN</typeratio>
@@ -81,7 +81,7 @@
                 <pallier>
                     <name>Gardien champion d'Europe</name>
                     <logo>img/products/1/7.png</logo>
-                    <seuil>200</seuil>
+                    <seuil>45</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
                     <typeratio>GAIN</typeratio>
@@ -90,7 +90,7 @@
                 <pallier>
                     <name>Gardien champion du monde</name>
                     <logo>img/products/1/8.png</logo>
-                    <seuil>300</seuil>
+                    <seuil>50</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
                     <typeratio>GAIN</typeratio>
@@ -99,7 +99,7 @@
                 <pallier>
                     <name>Meilleur gardien du monde</name>
                     <logo>img/products/1/9.png</logo>
-                    <seuil>400</seuil>
+                    <seuil>60</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
                     <typeratio>VITESSE</typeratio>
@@ -114,14 +114,14 @@
             <cout>70</cout>
             <croissance>15</croissance>
             <revenu>10</revenu>
-            <vitesse>300000</vitesse>
+            <vitesse>60000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
                     <name>Défenseur réserviste</name>
-                    <logo>img/products/2/.png</logo>
+                    <logo>img/products/2/1.png</logo>
                     <seuil>10</seuil>
                     <idcible>2</idcible>
                     <ratio>1.5</ratio>
@@ -130,7 +130,7 @@
                 </pallier>
                 <pallier>
                     <name>Défenseur remplaçant</name>
-                    <logo>null</logo>
+                    <logo>img/products/2/2.png</logo>
                     <seuil>25</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
@@ -139,7 +139,7 @@
                 </pallier>
                 <pallier>
                     <name>Défenseur titulaire</name>
-                    <logo>null</logo>
+                    <logo>img/products/2/3.png</logo>
                     <seuil>50</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
@@ -148,7 +148,7 @@
                 </pallier>
                 <pallier>
                     <name>Tacle assassin</name>
-                    <logo>null</logo>
+                    <logo>img/products/2/4.png</logo>
                     <seuil>75</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
@@ -157,7 +157,7 @@
                 </pallier>
                 <pallier>
                     <name>Défenseur de l'équipe nationale</name>
-                    <logo>null</logo>
+                    <logo>img/products/2/5.png</logo>
                     <seuil>100</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
@@ -166,7 +166,7 @@
                 </pallier>
                 <pallier>
                     <name>Sauvetage sur la ligne</name>
-                    <logo>null</logo>
+                    <logo>img/products/2/6.png</logo>
                     <seuil>150</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
@@ -175,7 +175,7 @@
                 </pallier>
                 <pallier>
                     <name>Défenseur champion d'Europe</name>
-                    <logo>null</logo>
+                    <logo>img/products/2/7.png</logo>
                     <seuil>200</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
@@ -184,7 +184,7 @@
                 </pallier>
                 <pallier>
                     <name>Défenseur champion du monde</name>
-                    <logo>null</logo>
+                    <logo>img/products/2/8.png</logo>
                     <seuil>300</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
@@ -193,7 +193,7 @@
                 </pallier>
                 <pallier>
                     <name>Meilleur défenseur du monde</name>
-                    <logo>null</logo>
+                    <logo>img/products/2/9.png</logo>
                     <seuil>400</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
@@ -216,7 +216,7 @@
             <palliers>
                 <pallier>
                     <name>Milieu réserviste</name>
-                    <logo>null</logo>
+                    <logo>img/products/3/1.png</logo>
                     <seuil>10</seuil>
                     <idcible>3</idcible>
                     <ratio>1.5</ratio>
@@ -225,7 +225,7 @@
                 </pallier>
                 <pallier>
                     <name>Milieu remplaçant</name>
-                    <logo>null</logo>
+                    <logo>img/products/3/2.png</logo>
                     <seuil>25</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -234,7 +234,7 @@
                 </pallier>
                 <pallier>
                     <name>Milieu titulaire</name>
-                    <logo>null</logo>
+                    <logo>img/products/3/3.png</logo>
                     <seuil>50</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
@@ -243,7 +243,7 @@
                 </pallier>
                 <pallier>
                     <name>Coup franc décisif</name>
-                    <logo>null</logo>
+                    <logo>img/products/3/4.png</logo>
                     <seuil>75</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
@@ -252,7 +252,7 @@
                 </pallier>
                 <pallier>
                     <name>Milieu de l'équipe nationale</name>
-                    <logo>null</logo>
+                    <logo>img/products/3/5.png</logo>
                     <seuil>100</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
@@ -261,7 +261,7 @@
                 </pallier>
                 <pallier>
                     <name>Le geste technique de l'année</name>
-                    <logo>null</logo>
+                    <logo>img/products/3/6.png</logo>
                     <seuil>150</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -270,7 +270,7 @@
                 </pallier>
                 <pallier>
                     <name>Milieu champion d'Europe</name>
-                    <logo>null</logo>
+                    <logo>img/products/3/7.png</logo>
                     <seuil>200</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -279,7 +279,7 @@
                 </pallier>
                 <pallier>
                     <name>Milieu champion du Monde</name>
-                    <logo>null</logo>
+                    <logo>img/products/3/8.png</logo>
                     <seuil>300</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
@@ -288,7 +288,7 @@
                 </pallier>
                 <pallier>
                     <name>Meilleur milieu du monde</name>
-                    <logo>null</logo>
+                    <logo>img/products/3/9.png</logo>
                     <seuil>400</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -501,7 +501,7 @@
             <palliers>
                 <pallier>
                     <name>Salle Léo Lagrange</name>
-                    <logo>null</logo>
+                    <logo>img/products/6/1.png</logo>
                     <seuil>10</seuil>
                     <idcible>6</idcible>
                     <ratio>1.5</ratio>
@@ -510,7 +510,7 @@
                 </pallier>
                 <pallier>
                     <name>Stade Raymond Kopa</name>
-                    <logo>null</logo>
+                    <logo>img/products/6/2.png</logo>
                     <seuil>25</seuil>
                     <idcible>6</idcible>
                     <ratio>2</ratio>
@@ -519,7 +519,7 @@
                 </pallier>
                 <pallier>
                     <name>Et 50 000 places supplémentaires</name>
-                    <logo>null</logo>
+                    <logo>img/products/6/3.png</logo>
                     <seuil>50</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
@@ -528,7 +528,7 @@
                 </pallier>
                 <pallier>
                     <name>Grand'Stade de Lille</name>
-                    <logo>null</logo>
+                    <logo>img/products/6/4.png</logo>
                     <seuil>75</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
@@ -537,7 +537,7 @@
                 </pallier>
                 <pallier>
                     <name>Groupama Stadium</name>
-                    <logo>null</logo>
+                    <logo>img/products/6/5.png</logo>
                     <seuil>100</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
@@ -546,7 +546,7 @@
                 </pallier>
                 <pallier>
                     <name>Signal Iduna Park</name>
-                    <logo>null</logo>
+                    <logo>img/products/6/6.png</logo>
                     <seuil>150</seuil>
                     <idcible>6</idcible>
                     <ratio>2</ratio>
@@ -555,7 +555,7 @@
                 </pallier>
                 <pallier>
                     <name>Stade de France</name>
-                    <logo>null</logo>
+                    <logo>img/products/6/7.png</logo>
                     <seuil>200</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
@@ -564,7 +564,7 @@
                 </pallier>
                 <pallier>
                     <name>Olympiastadion</name>
-                    <logo>null</logo>
+                    <logo>img/products/6/8.png</logo>
                     <seuil>300</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
@@ -573,7 +573,7 @@
                 </pallier>
                 <pallier>
                     <name>Stadio Bernabeu</name>
-                    <logo>null</logo>
+                    <logo>img/products/6/9.png</logo>
                     <seuil>400</seuil>
                     <idcible>6</idcible>
                     <ratio>2</ratio>
@@ -812,7 +812,7 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Guy roux adjoint</name>
+            <name>Guy Roux adjoint</name>
             <logo>img/upgrades/15.png</logo>
             <seuil>500000000000000</seuil>
             <idcible>-1</idcible>
@@ -906,7 +906,7 @@
         <pallier>
             <name>Pelé</name>
             <logo>img/angels/pele.png</logo>
-            <seuil>100000000000000000000000000000</seuil>
+            <seuil>100000000000000000</seuil>
             <idcible>-1</idcible>
             <ratio>5</ratio>
             <typeratio>ANGE</typeratio>
