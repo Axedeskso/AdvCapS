@@ -2,7 +2,7 @@
 
 <world
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-    xsi:noNamespaceSchemaLocation='jaxb/world/worldSchema.xsd'>
+    xsi:noNamespaceSchemaLocation='jaxb/worldSchema/worldSchema.xsd'>
     <name>Football Capitalist</name>
     <logo>img/logo.png</logo>
     <money>1500</money>
@@ -30,7 +30,7 @@
                     <seuil>5</seuil>
                     <idcible>1</idcible>
                     <ratio>1.5</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -39,7 +39,7 @@
                     <seuil>10</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -48,7 +48,7 @@
                     <seuil>20</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -57,7 +57,7 @@
                     <seuil>25</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -66,7 +66,7 @@
                     <seuil>30</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -75,7 +75,7 @@
                     <seuil>35</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -84,7 +84,7 @@
                     <seuil>45</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -93,7 +93,7 @@
                     <seuil>50</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -102,7 +102,7 @@
                     <seuil>60</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
             </palliers>
@@ -125,7 +125,7 @@
                     <seuil>10</seuil>
                     <idcible>2</idcible>
                     <ratio>1.5</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -134,7 +134,7 @@
                     <seuil>25</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -143,7 +143,7 @@
                     <seuil>50</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -152,7 +152,7 @@
                     <seuil>75</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -161,7 +161,7 @@
                     <seuil>100</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -170,7 +170,7 @@
                     <seuil>150</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -179,7 +179,7 @@
                     <seuil>200</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -188,7 +188,7 @@
                     <seuil>300</seuil>
                     <idcible>2</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -197,7 +197,7 @@
                     <seuil>400</seuil>
                     <idcible>2</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
             </palliers>
@@ -220,7 +220,7 @@
                     <seuil>10</seuil>
                     <idcible>3</idcible>
                     <ratio>1.5</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -229,7 +229,7 @@
                     <seuil>25</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -238,7 +238,7 @@
                     <seuil>50</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -247,7 +247,7 @@
                     <seuil>75</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -256,7 +256,7 @@
                     <seuil>100</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -265,7 +265,7 @@
                     <seuil>150</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -274,7 +274,7 @@
                     <seuil>200</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -283,7 +283,7 @@
                     <seuil>300</seuil>
                     <idcible>3</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -292,7 +292,7 @@
                     <seuil>400</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
             </palliers>
@@ -315,7 +315,7 @@
                     <seuil>10</seuil>
                     <idcible>4</idcible>
                     <ratio>1.5</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -324,7 +324,7 @@
                     <seuil>25</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -333,7 +333,7 @@
                     <seuil>50</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -342,7 +342,7 @@
                     <seuil>75</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -351,7 +351,7 @@
                     <seuil>100</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -360,7 +360,7 @@
                     <seuil>150</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -369,7 +369,7 @@
                     <seuil>200</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -378,7 +378,7 @@
                     <seuil>300</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -387,7 +387,7 @@
                     <seuil>400</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
             </palliers>
@@ -410,7 +410,7 @@
                     <seuil>10</seuil>
                     <idcible>5</idcible>
                     <ratio>1.5</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -419,7 +419,7 @@
                     <seuil>25</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -428,7 +428,7 @@
                     <seuil>50</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -437,7 +437,7 @@
                     <seuil>75</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -446,7 +446,7 @@
                     <seuil>100</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -455,7 +455,7 @@
                     <seuil>150</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -464,7 +464,7 @@
                     <seuil>200</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -473,7 +473,7 @@
                     <seuil>300</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -482,7 +482,7 @@
                     <seuil>400</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
             </palliers>
@@ -505,7 +505,7 @@
                     <seuil>10</seuil>
                     <idcible>6</idcible>
                     <ratio>1.5</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -514,7 +514,7 @@
                     <seuil>25</seuil>
                     <idcible>6</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -523,7 +523,7 @@
                     <seuil>50</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -532,7 +532,7 @@
                     <seuil>75</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -541,7 +541,7 @@
                     <seuil>100</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -550,7 +550,7 @@
                     <seuil>150</seuil>
                     <idcible>6</idcible>
                     <ratio>2</ratio>
-                    <typeratio>GAIN</typeratio>
+                    <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -559,7 +559,7 @@
                     <seuil>200</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -568,7 +568,7 @@
                     <seuil>300</seuil>
                     <idcible>6</idcible>
                     <ratio>3</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
@@ -577,7 +577,7 @@
                     <seuil>400</seuil>
                     <idcible>6</idcible>
                     <ratio>2</ratio>
-                    <typeratio>VITESSE</typeratio>
+                    <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
             </palliers>
@@ -590,7 +590,7 @@
             <seuil>10</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -599,7 +599,7 @@
             <seuil>25</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -608,7 +608,7 @@
             <seuil>50</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -617,7 +617,7 @@
             <seuil>75</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -626,7 +626,7 @@
             <seuil>100</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -635,7 +635,7 @@
             <seuil>150</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -644,7 +644,7 @@
             <seuil>200</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -653,7 +653,7 @@
             <seuil>250</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -662,7 +662,7 @@
             <seuil>300</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -671,7 +671,7 @@
             <seuil>400</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -680,7 +680,7 @@
             <seuil>500</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
     </allunlocks>
@@ -691,7 +691,7 @@
             <seuil>250000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -700,7 +700,7 @@
             <seuil>500000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -709,7 +709,7 @@
             <seuil>1000000</seuil>
             <idcible>3</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -718,7 +718,7 @@
             <seuil>5000000</seuil>
             <idcible>4</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -727,7 +727,7 @@
             <seuil>10000000</seuil>
             <idcible>5</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -736,7 +736,7 @@
             <seuil>25000000</seuil>
             <idcible>6</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -745,7 +745,7 @@
             <seuil>500000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -754,7 +754,7 @@
             <seuil>10000000000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -763,7 +763,7 @@
             <seuil>50000000000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -772,7 +772,7 @@
             <seuil>250000000000</seuil>
             <idcible>3</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -781,7 +781,7 @@
             <seuil>1000000000000</seuil>
             <idcible>4</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -790,7 +790,7 @@
             <seuil>20000000000000</seuil>
             <idcible>5</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -799,7 +799,7 @@
             <seuil>50000000000000</seuil>
             <idcible>6</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -808,7 +808,7 @@
             <seuil>100000000000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -817,7 +817,7 @@
             <seuil>500000000000000</seuil>
             <idcible>-1</idcible>
             <ratio>1</ratio>
-            <typeratio>ANGE</typeratio>
+            <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
     </upgrades>
@@ -828,7 +828,7 @@
             <seuil>10000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -837,7 +837,7 @@
             <seuil>100000</seuil>
             <idcible>-1</idcible>
             <ratio>2</ratio>
-            <typeratio>ANGE</typeratio>
+            <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -846,7 +846,7 @@
             <seuil>100000000</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -855,7 +855,7 @@
             <seuil>100000000000</seuil>
             <idcible>-1</idcible>
             <ratio>3</ratio>
-            <typeratio>ANGE</typeratio>
+            <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -864,7 +864,7 @@
             <seuil>100000000000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -873,7 +873,7 @@
             <seuil>100000000000000000</seuil>
             <idcible>-1</idcible>
             <ratio>2</ratio>
-            <typeratio>ANGE</typeratio>
+            <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -882,7 +882,7 @@
             <seuil>100000000000000000000</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -891,7 +891,7 @@
             <seuil>100000000000000000000000</seuil>
             <idcible>-1</idcible>
             <ratio>4</ratio>
-            <typeratio>ANGE</typeratio>
+            <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -900,7 +900,7 @@
             <seuil>100000000000000000000000000</seuil>
             <idcible>0</idcible>
             <ratio>4</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -909,7 +909,7 @@
             <seuil>100000000000000000</seuil>
             <idcible>-1</idcible>
             <ratio>5</ratio>
-            <typeratio>ANGE</typeratio>
+            <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
     </angelupgrades>
@@ -920,7 +920,7 @@
             <seuil>1000</seuil>
             <idcible>1</idcible>
             <ratio>0</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -929,7 +929,7 @@
             <seuil>15000</seuil>
             <idcible>2</idcible>
             <ratio>0</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -938,7 +938,7 @@
             <seuil>100000</seuil>
             <idcible>3</idcible>
             <ratio>0</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -947,7 +947,7 @@
             <seuil>500000</seuil>
             <idcible>4</idcible>
             <ratio>0</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -956,7 +956,7 @@
             <seuil>1200000</seuil>
             <idcible>5</idcible>
             <ratio>0</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
@@ -965,7 +965,7 @@
             <seuil>10000000</seuil>
             <idcible>6</idcible>
             <ratio>0</ratio>
-            <typeratio>GAIN</typeratio>
+            <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
     </managers>
