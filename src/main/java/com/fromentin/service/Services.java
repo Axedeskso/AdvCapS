@@ -24,6 +24,7 @@ public class Services {
         Unmarshaller u = cont.createUnmarshaller();
         World world;
         try {
+            //System.out.println("*******************************************"+ username);
             world = (World) u.unmarshal(new File(username+"-world.xml"));
         } catch(UnmarshalException e) {
             InputStream input = getClass().getClassLoader().getResourceAsStream("world.xml");
@@ -153,17 +154,17 @@ public class Services {
                      * on regarde si tous les autres ont la bonne quantité
                      */
                     if(product.getQuantite() >= unlock.getSeuil()) { 
-                        boolean go = false;
+                        boolean bonus = false;
                         for(ProductType p2: world.getProducts().getProduct()) {
                             if(p2.getQuantite() < unlock.getSeuil()) {
-                                go = true;
+                                bonus = true;
                                 break;
                             }
                         }
                         /**
                          * si tous les produits ont la bonne quantité
                          */
-                        if(!go) { 
+                        if(!bonus) { 
                             unlock.setUnlocked(true);
                             /**
                              * on applique le bon bonus
