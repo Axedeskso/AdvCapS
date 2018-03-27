@@ -19,13 +19,6 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 import javax.xml.bind.JAXBException;
 
-
-/**
- * 
- * @author Hassani
- * ADRESSE DU WORLD : http://localhost:8080/AdvCapS/webresources/world
- * 
- */
 @Path("")
 public class GenericResource {
 
@@ -36,11 +29,7 @@ public class GenericResource {
     public GenericResource() {
         this.services = new Services();
     }
-    /**
-     * 
-     * @param request retourne au client une représentation du monde sous format xml
-     * @return 
-     */
+
     @GET
     @Path("world")
     @Produces("application/xml")
@@ -54,21 +43,16 @@ public class GenericResource {
             Logger.getLogger(GenericResource.class.getName()).log(Level.SEVERE, null, ex);
         }
         return Response.status(Response.Status.NOT_FOUND).build();
-    }
-    
-    /**
-     * 
-     * @param request retourne au client une représentation du monde sous format Gson
-     * @return 
-     */
+    }    
+
     @GET
     @Path("world")
     @Produces("application/json")
     public Response getXmlJson(@Context HttpServletRequest request) {
         String username =  request.getHeader("X-user");
-        //World world = null ;
+        World world;
         try {
-            World world = services.getWorld(username);
+            world = services.getWorld(username);
             return Response.ok(new Gson().toJson(world)).build();
         } catch (JAXBException ex) {
             Logger.getLogger(GenericResource.class.getName()).log(Level.SEVERE, null, ex);
@@ -76,8 +60,6 @@ public class GenericResource {
         return Response.status(Response.Status.NOT_FOUND).build();
     }
     
-    
-//    PUT PRODUCT
     @PUT
     @Path("product")
     @Consumes("application/json")
@@ -85,8 +67,9 @@ public class GenericResource {
         String username =  request.getHeader("X-user");
         ProductType product = new Gson().fromJson(data, ProductType.class);
         services.updateProduct(product, username);
+        System.out.println("PUT PRODUCT "+ data);
     }
- //    PUT MANAGER   
+     
     @PUT
     @Path("manager")
     @Consumes("application/json")
@@ -94,9 +77,9 @@ public class GenericResource {
         String username =  request.getHeader("X-user");
         PallierType manager = new Gson().fromJson(data, PallierType.class);
         services.updateManager(manager, username);
+        System.out.println("PUT MANAGER "+ data);
     }
-    
-//    PUT UPGRADE
+
     @PUT
     @Path("upgrade")
     @Consumes("application/json")
@@ -104,8 +87,9 @@ public class GenericResource {
         String username =  request.getHeader("X-user");
         PallierType upgrade = new Gson().fromJson(data, PallierType.class);
         services.updateUpgrade(upgrade, username);
+        System.out.println("PUT UPGRADE "+ data);
     }
-//    PUT ANGEL
+
     @PUT
     @Path("angelupgrade")
     @Consumes("application/json")
@@ -113,13 +97,15 @@ public class GenericResource {
         String username =  request.getHeader("X-user");
         PallierType angelupgrade = new Gson().fromJson(data, PallierType.class);
         services.updateAngelUpgrade(angelupgrade, username);
+        System.out.println("PUT ANGEL "+ data);
     }
-//    DELETE WORLD 
+
     @DELETE
     @Path("world")
     @Consumes("application/json")
     public void deleteWorld(@Context HttpServletRequest request) throws JAXBException {
         String username = request.getHeader("X-user");
         services.resetWorld(username);
+        System.out.println("DELETE WORLD");
     }
 }

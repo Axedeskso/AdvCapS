@@ -5,7 +5,7 @@
     xsi:noNamespaceSchemaLocation='jaxb/worldSchema/worldSchema.xsd'>
     <name>Football Capitalist</name>
     <logo>img/logo.png</logo>
-    <money>1500</money>
+    <money>1</money>
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
@@ -17,9 +17,9 @@
             <name>Gardien</name>
             <logo>img/products/1.png</logo>
             <cout>1</cout>
-            <croissance>7</croissance>
+            <croissance>3</croissance>
             <revenu>1</revenu>
-            <vitesse>10000</vitesse>
+            <vitesse>5000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -114,7 +114,7 @@
             <cout>70</cout>
             <croissance>15</croissance>
             <revenu>10</revenu>
-            <vitesse>60000</vitesse>
+            <vitesse>10000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -209,7 +209,7 @@
             <cout>720</cout>
             <croissance>14</croissance>
             <revenu>540</revenu>
-            <vitesse>300000</vitesse>
+            <vitesse>15000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -304,14 +304,14 @@
             <cout>8640</cout>
             <croissance>13</croissance>
             <revenu>4320</revenu>
-            <vitesse>600000</vitesse>
+            <vitesse>20000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
                     <name>Attaquant réserviste</name>
-                    <logo>null</logo>
+                    <logo>img/products/4/1.png</logo>
                     <seuil>10</seuil>
                     <idcible>4</idcible>
                     <ratio>1.5</ratio>
@@ -320,7 +320,7 @@
                 </pallier>
                 <pallier>
                     <name>Attanquant remplaçant</name>
-                    <logo>null</logo>
+                    <logo>img/products/4/2.png</logo>
                     <seuil>25</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
@@ -329,7 +329,7 @@
                 </pallier>
                 <pallier>
                     <name>Attaquant titulaire</name>
-                    <logo>null</logo>
+                    <logo>img/products/4/3.png</logo>
                     <seuil>50</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
@@ -338,7 +338,7 @@
                 </pallier>
                 <pallier>
                     <name>Frappe de mule</name>
-                    <logo>null</logo>
+                    <logo>img/products/4/4.png</logo>
                     <seuil>75</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
@@ -347,7 +347,7 @@
                 </pallier>
                 <pallier>
                     <name>Attaquant de l'équipe nationale</name>
-                    <logo>null</logo>
+                    <logo>img/products/4/5.png</logo>
                     <seuil>100</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
@@ -356,7 +356,7 @@
                 </pallier>
                 <pallier>
                     <name>But de l'année</name>
-                    <logo>null</logo>
+                    <logo>img/products/4/6.png</logo>
                     <seuil>150</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
@@ -365,7 +365,7 @@
                 </pallier>
                 <pallier>
                     <name>Attaquant champion d'Europe</name>
-                    <logo>null</logo>
+                    <logo>img/products/4/7.png</logo>
                     <seuil>200</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
@@ -374,7 +374,7 @@
                 </pallier>
                 <pallier>
                     <name>Attaquant champion du Monde</name>
-                    <logo>null</logo>
+                    <logo>img/products/4/8.png</logo>
                     <seuil>300</seuil>
                     <idcible>4</idcible>
                     <ratio>3</ratio>
@@ -383,7 +383,7 @@
                 </pallier>
                 <pallier>
                     <name>Meilleur attaquant du Monde</name>
-                    <logo>null</logo>
+                    <logo>img/products/4/9.png</logo>
                     <seuil>400</seuil>
                     <idcible>4</idcible>
                     <ratio>2</ratio>
@@ -399,14 +399,14 @@
             <cout>103680</cout>
             <croissance>12</croissance>
             <revenu>51840</revenu>
-            <vitesse>1800000</vitesse>
+            <vitesse>25000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
                     <name>Entraineur district</name>
-                    <logo>null</logo>
+                    <logo>img/products/5/1.png</logo>
                     <seuil>10</seuil>
                     <idcible>5</idcible>
                     <ratio>1.5</ratio>
@@ -415,7 +415,7 @@
                 </pallier>
                 <pallier>
                     <name>Entraineur professionel</name>
-                    <logo>null</logo>
+                    <logo>img/products/5/2.png</logo>
                     <seuil>25</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
@@ -424,7 +424,7 @@
                 </pallier>
                 <pallier>
                     <name>Entraineur champion national</name>
-                    <logo>null</logo>
+                    <logo>img/products/5/3.png</logo>
                     <seuil>50</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
@@ -433,7 +433,7 @@
                 </pallier>
                 <pallier>
                     <name>Un remplacement victorieux</name>
-                    <logo>null</logo>
+                    <logo>img/products/5/4.png</logo>
                     <seuil>75</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
@@ -442,7 +442,7 @@
                 </pallier>
                 <pallier>
                     <name>Selectioneur national</name>
-                    <logo>null</logo>
+                    <logo>img/products/5/5.png</logo>
                     <seuil>100</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
@@ -451,7 +451,7 @@
                 </pallier>
                 <pallier>
                     <name>Une selection qui convientà tout le monde</name>
-                    <logo>null</logo>
+                    <logo>img/products/5/56.png</logo>
                     <seuil>150</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
@@ -460,7 +460,7 @@
                 </pallier>
                 <pallier>
                     <name>Selectionneur champion d'Europe</name>
-                    <logo>null</logo>
+                    <logo>img/products/5/7.png</logo>
                     <seuil>200</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
@@ -469,7 +469,7 @@
                 </pallier>
                 <pallier>
                     <name>Selectionneur champion du Monde</name>
-                    <logo>null</logo>
+                    <logo>img/products/5/8.png</logo>
                     <seuil>300</seuil>
                     <idcible>5</idcible>
                     <ratio>3</ratio>
@@ -478,7 +478,7 @@
                 </pallier>
                 <pallier>
                     <name>Meilleur entraineur du Monde</name>
-                    <logo>null</logo>
+                    <logo>img/products/5/9.png</logo>
                     <seuil>400</seuil>
                     <idcible>5</idcible>
                     <ratio>2</ratio>
@@ -494,7 +494,7 @@
             <cout>1244160</cout>
             <croissance>11</croissance>
             <revenu>6220800</revenu>
-            <vitesse>3600000</vitesse>
+            <vitesse>30000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -731,7 +731,7 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Un stade complètement couvert</name>
+            <name>Un stade couvert</name>
             <logo>img/upgrades/6.png</logo>
             <seuil>25000000</seuil>
             <idcible>6</idcible>
