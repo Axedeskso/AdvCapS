@@ -688,7 +688,7 @@
         <pallier>
             <name>Nouveaux gants</name>
             <logo>img/upgrades/1.png</logo>
-            <seuil>250000</seuil>
+            <seuil>100000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -697,7 +697,7 @@
         <pallier>
             <name>Travail de la tête</name>
             <logo>img/upgrades/2.png</logo>
-            <seuil>500000</seuil>
+            <seuil>200000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -706,7 +706,7 @@
         <pallier>
             <name>Passements de jambes améliorés</name>
             <logo>img/upgrades/3.png</logo>
-            <seuil>1000000</seuil>
+            <seuil>250000</seuil>
             <idcible>3</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -715,7 +715,7 @@
         <pallier>
             <name>Coup de reins devastateur</name>
             <logo>img/upgrades/4.png</logo>
-            <seuil>5000000</seuil>
+            <seuil>500000</seuil>
             <idcible>4</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -724,7 +724,7 @@
         <pallier>
             <name>Une glacière pour le match</name>
             <logo>img/upgrades/5.png</logo>
-            <seuil>10000000</seuil>
+            <seuil>1000000</seuil>
             <idcible>5</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -733,7 +733,7 @@
         <pallier>
             <name>Un stade couvert</name>
             <logo>img/upgrades/6.png</logo>
-            <seuil>25000000</seuil>
+            <seuil>2500000</seuil>
             <idcible>6</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -742,7 +742,7 @@
         <pallier>
             <name>Un marketing florissant</name>
             <logo>img/upgrades/7.png</logo>
-            <seuil>500000000</seuil>
+            <seuil>5000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -751,7 +751,7 @@
         <pallier>
             <name>Arrêt d'une main</name>
             <logo>img/upgrades/8.png</logo>
-            <seuil>10000000000</seuil>
+            <seuil>10000000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -760,7 +760,7 @@
         <pallier>
             <name>Epaule contre épaule</name>
             <logo>img/upgrades/9.png</logo>
-            <seuil>50000000000</seuil>
+            <seuil>25000000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -769,7 +769,7 @@
         <pallier>
             <name>Touche dans la surface de reparation</name>
             <logo>img/upgrades/10.png</logo>
-            <seuil>250000000000</seuil>
+            <seuil>50000000</seuil>
             <idcible>3</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -778,7 +778,7 @@
         <pallier>
             <name>Coup franc de 30m</name>
             <logo>img/upgrades/11.png</logo>
-            <seuil>1000000000000</seuil>
+            <seuil>100000000</seuil>
             <idcible>4</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -787,7 +787,7 @@
         <pallier>
             <name>Interieur du pied</name>
             <logo>img/upgrades/12.png</logo>
-            <seuil>20000000000000</seuil>
+            <seuil>250000000</seuil>
             <idcible>5</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -796,7 +796,7 @@
         <pallier>
             <name>Concert en levé de rideau</name>
             <logo>img/upgrades/13.png</logo>
-            <seuil>50000000000000</seuil>
+            <seuil>500000000</seuil>
             <idcible>6</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -805,7 +805,7 @@
         <pallier>
             <name>Boutique en ligne</name>
             <logo>img/upgrades/14.png</logo>
-            <seuil>100000000000000</seuil>
+            <seuil>1000000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -814,7 +814,7 @@
         <pallier>
             <name>Guy Roux adjoint</name>
             <logo>img/upgrades/15.png</logo>
-            <seuil>500000000000000</seuil>
+            <seuil>2000000000</seuil>
             <idcible>-1</idcible>
             <ratio>1</ratio>
             <typeratio>ange</typeratio>
@@ -843,7 +843,7 @@
         <pallier>
             <name>Ronaldinho</name>
             <logo>img/angels/ronaldinho.png</logo>
-            <seuil>100000000</seuil>
+            <seuil>25000000</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
             <typeratio>gain</typeratio>
@@ -852,7 +852,7 @@
         <pallier>
             <name>Zinedine Zidane</name>
             <logo>img/angels/zidane.png</logo>
-            <seuil>100000000000</seuil>
+            <seuil>50000000</seuil>
             <idcible>-1</idcible>
             <ratio>3</ratio>
             <typeratio>ange</typeratio>
@@ -861,7 +861,7 @@
         <pallier>
             <name>George Best</name>
             <logo>img/angels/best.png</logo>
-            <seuil>100000000000000</seuil>
+            <seuil>100000000</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
             <typeratio>gain</typeratio>
@@ -870,7 +870,7 @@
         <pallier>
             <name>Frand Beckenbauer</name>
             <logo>img/angels/beckenbauer.png</logo>
-            <seuil>100000000000000000</seuil>
+            <seuil>250000000</seuil>
             <idcible>-1</idcible>
             <ratio>2</ratio>
             <typeratio>ange</typeratio>
@@ -879,7 +879,7 @@
         <pallier>
             <name>Alfredo Di Stefano</name>
             <logo>img/angels/distefano.png</logo>
-            <seuil>100000000000000000000</seuil>
+            <seuil>500000000</seuil>
             <idcible>0</idcible>
             <ratio>2</ratio>
             <typeratio>gain</typeratio>
@@ -888,7 +888,7 @@
         <pallier>
             <name>Diego Maradonna</name>
             <logo>img/angels/maradonna.png</logo>
-            <seuil>100000000000000000000000</seuil>
+            <seuil>1000000000</seuil>
             <idcible>-1</idcible>
             <ratio>4</ratio>
             <typeratio>ange</typeratio>
@@ -897,7 +897,7 @@
         <pallier>
             <name>Johan Cruif</name>
             <logo>img/angels/cruif.png</logo>
-            <seuil>100000000000000000000000000</seuil>
+            <seuil>1500000000</seuil>
             <idcible>0</idcible>
             <ratio>4</ratio>
             <typeratio>gain</typeratio>
@@ -906,7 +906,7 @@
         <pallier>
             <name>Pelé</name>
             <logo>img/angels/pele.png</logo>
-            <seuil>100000000000000000</seuil>
+            <seuil>2000000000</seuil>
             <idcible>-1</idcible>
             <ratio>5</ratio>
             <typeratio>ange</typeratio>
