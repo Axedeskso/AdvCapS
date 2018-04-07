@@ -67,7 +67,7 @@ public class GenericResource {
         String username =  request.getHeader("X-user");
         ProductType product = new Gson().fromJson(data, ProductType.class);
         services.updateProduct(product, username);
-        System.out.println("PUT PRODUCT "+ data);
+//        System.out.println("PUT PRODUCT "+ data);
     }
      
     @PUT

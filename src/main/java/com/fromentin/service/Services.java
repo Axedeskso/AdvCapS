@@ -11,126 +11,62 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.UnmarshalException;
 import javax.xml.bind.Unmarshaller;
 
-/**
- * 
- * @author Hassani
- */
 public class Services {
 
-    //LECTURE DU FICHIER XML
-    
-   private World readWorldFromXml(String username) throws JAXBException {
+    private World readWorldFromXml(String username) throws JAXBException {
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Unmarshaller u = cont.createUnmarshaller();
         World world;
         try {
-            //System.out.println("*******************************************"+ username);
-            world = (World) u.unmarshal(new File(username+"-world.xml"));
-        } catch(UnmarshalException e) {
+            world = (World) u.unmarshal(new File(username + "-world.xml"));
+        } catch (UnmarshalException e) {
             InputStream input = getClass().getClassLoader().getResourceAsStream("world.xml");
             world = (World) u.unmarshal(input);
         }
         return world;
     }
 
-   //SAUVEGARDE DU FICHIER XML
-   
     private void saveWorldToXml(World world, String username) throws JAXBException {
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Marshaller m = cont.createMarshaller();
-        m.marshal(world, new File(username+"-world.xml"));
+        m.marshal(world, new File(username + "-world.xml"));
     }
-    
-    //OBTENTION DU FICHIER XML
-    
-    //public World getWorld(String username) throws JAXBException {
+
     public World getWorld(String username) throws JAXBException {
         World world = readWorldFromXml(username);
+        majScore(world);
         world.setLastupdate(System.currentTimeMillis());
         saveWorldToXml(world, username);
         return world;
     }
-    /**
-     * 
-     * @param newproduct, prends en paramètre le produit
-     * @param username, prend en paramètre le pseudo du joueur
-     * @return false si l'action n'a pas pu être traitée
-     * @throws JAXBException 
-     */
-    public Boolean updateProduct(ProductType newproduct, String username) throws JAXBException{
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+    public Boolean updateProduct(ProductType newproduct, String username) throws JAXBException {
         World world = getWorld(username);
-        /**
-         * Trouver dans ce monde le produit équivalent à celui passé
-         * en paramètre
-         */
         ProductType product = findProductById(world, newproduct.getId());
-        if(product == null)
+        if (product == null) {
             return false;
-        /**
-         * calcule de la quantité de produits achetés
-         */
-        int qtchange = newproduct.getQuantite() - product.getQuantite(); 
-        /**
-         * si des produits ont été achetés
-         */
-        if(qtchange > 0) { 
-            double RevenuBase;
-            /**
-             * si on a déjà au moins un produit
-             */
-            if(product.getQuantite() > 0) 
-                /**
-                 * calcul du revenu de base
-                 */
-                RevenuBase = product.getRevenu() / product.getQuantite();
-            /**
-             * sinon on a déjà le revenu de base
-             */
-            else 
-                RevenuBase = product.getRevenu();
-            /**
-             * transformation de la croissance au format 1.XX
-             */
-            double q = 1+product.getCroissance()/100; 
-            /**
-             * prix dépensé
-             */
-            double depense = product.getCout()*Math.pow(q, product.getQuantite())*((1-Math.pow(q, qtchange))/(1-q)); 
-            /**
-             * on retire la dépense de l'argent en cours
-             */
-            world.setMoney(world.getMoney() - depense); 
-            /**
-             * on augmente la quantité de produits
-             */
+        }
+        int qtchange = newproduct.getQuantite() - product.getQuantite();
+        if (qtchange > 0) {
+            double baseRevenu;
+            if (product.getQuantite() > 0) {
+                baseRevenu = product.getRevenu() / product.getQuantite();
+            } else {
+                baseRevenu = product.getRevenu();
+            }
+            double q = product.getCroissance();
+            double depense = product.getCout() * Math.pow(q, product.getQuantite()) * ((1 - Math.pow(q, qtchange)) / (1 - q));
+            System.out.println("ACHAT : "+depense +" - "+ "MONEY : "+world.getMoney());
+            world.setMoney(world.getMoney() - depense);
             product.setQuantite(product.getQuantite() + qtchange);
-            /**
-             * Si on a au moins deux produits on augemente le revenu par le nouveau
-             */
-            if(product.getQuantite() > 1) 
-                product.setRevenu(product.getRevenu() + (RevenuBase * qtchange));
-            
-            /**
-             * on regarde si on a débloqué des unlocks du produit
-             */
-            for(PallierType unlock: product.getPalliers().getPallier()) {
-                /**
-                 * on regarde le premier non débloqué
-                 */
-                if( ! unlock.isUnlocked()) { 
-                    /**
-                     * si on a assez de produits pour débloquer cet unlock
-                     */
-                    if(product.getQuantite() >= unlock.getSeuil()) {
-                        /**
-                         * on indique qu'il est débloqué
-                         */
-                        unlock.setUnlocked(true); 
-                        /**
-                         * on ajoute le bonus correspondant
-                         */
-                        switch(unlock.getTyperatio()) { 
+            if (product.getQuantite() > 1) {
+                product.setRevenu(product.getRevenu() + (baseRevenu * qtchange));
+            }
+            for (PallierType unlock : product.getPalliers().getPallier()) {
+                if (!unlock.isUnlocked()) {
+                    if (product.getQuantite() >= unlock.getSeuil()) {
+                        unlock.setUnlocked(true);
+                        switch (unlock.getTyperatio()) {
                             case GAIN:
                                 product.setRevenu(product.getRevenu() * unlock.getRatio());
                                 break;
@@ -139,133 +75,98 @@ public class Services {
                                 product.setTimeleft((long) (product.getTimeleft() / unlock.getRatio()));
                                 break;
                         }
-                    }
-                    else
+                    } else {
                         break;
+                    }
                 }
             }
-            
-            /**
-             * on regarde si on a débloqué des unlocks appliqués à tous les produits
-             */
-            for(PallierType unlock: world.getAllunlocks().getPallier()) {
-                if( ! unlock.isUnlocked()) {
-                    /**
-                     * on regarde si tous les autres ont la bonne quantité
-                     */
-                    if(product.getQuantite() >= unlock.getSeuil()) { 
-                        boolean bonus = false;
-                        for(ProductType p2: world.getProducts().getProduct()) {
-                            if(p2.getQuantite() < unlock.getSeuil()) {
-                                bonus = true;
+            for (PallierType unlock : world.getAllunlocks().getPallier()) {
+                if (!unlock.isUnlocked()) {
+                    if (product.getQuantite() >= unlock.getSeuil()) {
+                        boolean ko = false;
+                        for (ProductType p2 : world.getProducts().getProduct()) {
+                            if (p2.getQuantite() < unlock.getSeuil()) {
+                                ko = true;
                                 break;
                             }
                         }
-                        /**
-                         * si tous les produits ont la bonne quantité
-                         */
-                        if(!bonus) { 
+                        if (!ko) {
                             unlock.setUnlocked(true);
-                            /**
-                             * on applique le bon bonus
-                             */
-                            switch(unlock.getTyperatio()) { 
+                            switch (unlock.getTyperatio()) {
                                 case GAIN:
-                                    for(ProductType p2: world.getProducts().getProduct()) {
+                                    for (ProductType p2 : world.getProducts().getProduct()) {
                                         p2.setRevenu(p2.getRevenu() * unlock.getRatio());
                                     }
                                     break;
                                 case VITESSE:
-                                    for(ProductType p2: world.getProducts().getProduct()) {
+                                    for (ProductType p2 : world.getProducts().getProduct()) {
                                         p2.setVitesse((int) (p2.getVitesse() / unlock.getRatio()));
                                         p2.setTimeleft((long) (p2.getTimeleft() / unlock.getRatio()));
                                     }
                                     break;
                             }
-                        }
-                        else
+                        } else {
                             break;
-                    }
-                    else
+                        }
+                    } else {
                         break;
+                    }
                 }
             }
-        }
-        /**
-         * si pas de changement de quantité, cela veut dire qu'on a produit un produit. On passe donc le timeleft à la vitesse du produit
-         */
-        else 
+        } else {
             product.setTimeleft(product.getVitesse());
-        
-        
+        }
+        majScore(world);
         world.setLastupdate(System.currentTimeMillis());
         saveWorldToXml(world, username);
         return true;
     }
 
-    /**
-     * 
-     * @param newmanager, prends en paramètre le le manager
-     * @param username, prend en paramètre le pseudo du joueur
-     * @return false si l'action n'a pas pu être traitée
-     * @throws JAXBException 
-     */
     public Boolean updateManager(PallierType newmanager, String username) throws JAXBException {
         World world = getWorld(username);
         PallierType manager = findManagerByName(world, newmanager.getName());
-        if(manager == null) {
+        if (manager == null) {
             return false;
         }
         manager.setUnlocked(true);
         ProductType product = findProductById(world, manager.getIdcible());
-        if(product == null) {
+        if (product == null) {
             return false;
         }
         product.setManagerUnlocked(true);
-        world.setMoney(world.getMoney()-manager.getSeuil());
-        
+        world.setMoney(world.getMoney() - manager.getSeuil());
         world.setLastupdate(System.currentTimeMillis());
         saveWorldToXml(world, username);
         return true;
     }
-    
-    /**
-     * 
-     * @param newupgrade
-     * @param username
-     * @return 
-     * @throws JAXBException 
-     */
-    public Boolean updateUpgrade(PallierType newupgrade, String username) throws JAXBException{
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+    public Boolean updateUpgrade(PallierType newupgrade, String username) throws JAXBException {
         World world = getWorld(username);
         PallierType upgrade = findUpgradeByName(world, newupgrade.getName());
-        if(upgrade == null) {
+        if (upgrade == null) {
             return false;
         }
         upgrade.setUnlocked(true);
         int id = upgrade.getIdcible();
-        if(id == 0) {
-            switch(upgrade.getTyperatio()) {
+        if (id == 0) {
+            switch (upgrade.getTyperatio()) {
                 case GAIN:
-                    for(ProductType p2: world.getProducts().getProduct()) {
+                    for (ProductType p2 : world.getProducts().getProduct()) {
                         p2.setRevenu(p2.getRevenu() * upgrade.getRatio());
                     }
                     break;
                 case VITESSE:
-                    for(ProductType p2: world.getProducts().getProduct()) {
+                    for (ProductType p2 : world.getProducts().getProduct()) {
                         p2.setVitesse((int) (p2.getVitesse() / upgrade.getRatio()));
                         p2.setTimeleft((long) (p2.getTimeleft() / upgrade.getRatio()));
                     }
                     break;
             }
-        }
-        else if (id == -1) {
+        } else if (id == -1) {
             world.setAngelbonus((int) (world.getAngelbonus() + upgrade.getRatio()));
-        }
-        else {
+        } else {
             ProductType product = findProductById(world, id);
-            switch(upgrade.getTyperatio()) {
+            switch (upgrade.getTyperatio()) {
                 case GAIN:
                     product.setRevenu(product.getRevenu() * upgrade.getRatio());
                     break;
@@ -275,67 +176,76 @@ public class Services {
                     break;
             }
         }
-        
-        world.setMoney(world.getMoney()-upgrade.getSeuil());
-        
-        
+        world.setMoney(world.getMoney() - upgrade.getSeuil());
         world.setLastupdate(System.currentTimeMillis());
         saveWorldToXml(world, username);
         return true;
     }
-    
-    /**
-     * 
-     * @param newangelupgrade
-     * @param username
-     * @return
-     * @throws JAXBException 
-     */
-    public Boolean updateAngelUpgrade(PallierType newangelupgrade, String username) throws JAXBException{
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+    public Boolean updateAngelUpgrade(PallierType newangelupgrade, String username) throws JAXBException {
         World world = getWorld(username);
         PallierType angelupgrade = findAngelUpgradeByName(world, newangelupgrade.getName());
-        if(angelupgrade == null) {
+        if (angelupgrade == null) {
             return false;
         }
         angelupgrade.setUnlocked(true);
         int id = angelupgrade.getIdcible();
-        switch(angelupgrade.getTyperatio()) {
+        switch (angelupgrade.getTyperatio()) {
             case ANGE:
                 world.setAngelbonus((int) (world.getAngelbonus() + angelupgrade.getRatio()));
                 break;
             case GAIN:
-                for(ProductType p2: world.getProducts().getProduct()) {
+                for (ProductType p2 : world.getProducts().getProduct()) {
                     p2.setRevenu(p2.getRevenu() * angelupgrade.getRatio());
                 }
                 break;
             case VITESSE:
-                for(ProductType p2: world.getProducts().getProduct()) {
+                for (ProductType p2 : world.getProducts().getProduct()) {
                     p2.setVitesse((int) (p2.getVitesse() / angelupgrade.getRatio()));
                     p2.setTimeleft((long) (p2.getTimeleft() / angelupgrade.getRatio()));
                 }
                 break;
         }
-        
-        world.setActiveangels(world.getActiveangels()-angelupgrade.getSeuil());
-        
+        world.setActiveangels(world.getActiveangels() - angelupgrade.getSeuil());
         world.setLastupdate(System.currentTimeMillis());
         saveWorldToXml(world, username);
         return true;
     }
-    
-    /**
-     * 
-     * @param username
-     * @throws JAXBException 
-     */
+
+    private void majScore(World world) {
+        System.out.println("-- MONEY :" + world.getMoney());
+        long now = System.currentTimeMillis();
+        for (ProductType p : world.getProducts().getProduct()) {
+            if (p.isManagerUnlocked() && p.getQuantite() > 0) {
+                long number = Math.floorDiv((now - world.getLastupdate() + p.getVitesse() - p.getTimeleft()), p.getVitesse());
+                long tempsRestant = Math.floorMod((now - world.getLastupdate() + p.getVitesse() - p.getTimeleft()), p.getVitesse());
+                System.out.println(tempsRestant);
+                world.setMoney(world.getMoney() + (p.getRevenu() * (1 + world.getActiveangels() * world.getAngelbonus() / 100)) * number);
+                world.setScore(world.getScore() + (p.getRevenu() * (1 + world.getActiveangels() * world.getAngelbonus() / 100)) * number);
+
+                p.setTimeleft(tempsRestant);
+
+                if (p.getTimeleft() < 0) {
+                    p.setTimeleft(0);
+                }
+            } else {
+                System.out.println("MONEY :" + world.getMoney());
+                if (p.getTimeleft() > 0 && p.getTimeleft() <= now - world.getLastupdate()) {
+                    world.setMoney(world.getMoney() + (p.getRevenu() * (1 + world.getActiveangels() * world.getAngelbonus() / 100)));
+                    world.setScore(world.getScore() + (p.getRevenu() * (1 + world.getActiveangels() * world.getAngelbonus() / 100)));
+                    p.setTimeleft(0);
+                } else if (p.getTimeleft() > 0) {
+                    p.setTimeleft(p.getTimeleft() - (now - world.getLastupdate()));
+                }
+            }
+        }
+    }
+
     public void resetWorld(String username) throws JAXBException {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         World world = getWorld(username);
         double nbAngels = Math.round(150 * Math.sqrt(world.getScore() / Math.pow(10, 15)) - world.getTotalangels());
         world.setTotalangels(world.getTotalangels() + nbAngels);
         world.setActiveangels(world.getActiveangels() + nbAngels);
-        
         JAXBContext cont = JAXBContext.newInstance(World.class);
         Unmarshaller u = cont.createUnmarshaller();
         InputStream input = getClass().getClassLoader().getResourceAsStream("world.xml");
@@ -347,12 +257,12 @@ public class Services {
     }
 
     private ProductType findProductById(World world, int id) {
-        return world.getProducts().getProduct().get(id-1);
+        return world.getProducts().getProduct().get(id - 1);
     }
 
     private PallierType findUpgradeByName(World world, String name) {
-        for(PallierType upgrade: world.getUpgrades().getPallier()) {
-            if(upgrade.getName().equals(name)) {
+        for (PallierType upgrade : world.getUpgrades().getPallier()) {
+            if (upgrade.getName().equals(name)) {
                 return upgrade;
             }
         }
@@ -360,8 +270,8 @@ public class Services {
     }
 
     private PallierType findAngelUpgradeByName(World world, String name) {
-        for(PallierType angelupgrade: world.getAngelupgrades().getPallier()) {
-            if(angelupgrade.getName().equals(name)) {
+        for (PallierType angelupgrade : world.getAngelupgrades().getPallier()) {
+            if (angelupgrade.getName().equals(name)) {
                 return angelupgrade;
             }
         }
@@ -369,13 +279,11 @@ public class Services {
     }
 
     private PallierType findManagerByName(World world, String name) {
-        for(PallierType manager: world.getManagers().getPallier()) {
-            if(manager.getName().equals(name)) {
+        for (PallierType manager : world.getManagers().getPallier()) {
+            if (manager.getName().equals(name)) {
                 return manager;
             }
         }
         return null;
     }
-
-    
 }

@@ -5,7 +5,7 @@
     xsi:noNamespaceSchemaLocation='jaxb/worldSchema/worldSchema.xsd'>
     <name>Football Capitalist</name>
     <logo>img/logo.png</logo>
-    <money>1</money>
+    <money>0</money>
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
@@ -17,17 +17,17 @@
             <name>Gardien</name>
             <logo>img/products/1.png</logo>
             <cout>1</cout>
-            <croissance>3</croissance>
+            <croissance>1.01</croissance>
             <revenu>1</revenu>
             <vitesse>5000</vitesse>
-            <quantite>0</quantite>
+            <quantite>1</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
                     <name>Gardien réserviste</name>
                     <logo>img/products/1/1.png</logo>
-                    <seuil>5</seuil>
+                    <seuil>10</seuil>
                     <idcible>1</idcible>
                     <ratio>1.5</ratio>
                     <typeratio>gain</typeratio>
@@ -36,7 +36,7 @@
                 <pallier>
                     <name>Gardien remplaçant</name>
                     <logo>img/products/1/2.png</logo>
-                    <seuil>10</seuil>
+                    <seuil>25</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
                     <typeratio>vitesse</typeratio>
@@ -45,7 +45,7 @@
                 <pallier>
                     <name>Gardien titulaire</name>
                     <logo>img/products/1/3.png</logo>
-                    <seuil>20</seuil>
+                    <seuil>50</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
                     <typeratio>gain</typeratio>
@@ -54,7 +54,7 @@
                 <pallier>
                     <name>Un arrêt decisif</name>
                     <logo>img/products/1/4.png</logo>
-                    <seuil>25</seuil>
+                    <seuil>100</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
                     <typeratio>gain</typeratio>
@@ -63,7 +63,7 @@
                 <pallier>
                     <name>Gardien de l'équipe nationale</name>
                     <logo>img/products/1/5.png</logo>
-                    <seuil>30</seuil>
+                    <seuil>250</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
                     <typeratio>gain</typeratio>
@@ -72,7 +72,7 @@
                 <pallier>
                     <name>Le gant d'or</name>
                     <logo>img/products/1/6.png</logo>
-                    <seuil>35</seuil>
+                    <seuil>500</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
@@ -81,7 +81,7 @@
                 <pallier>
                     <name>Gardien champion d'Europe</name>
                     <logo>img/products/1/7.png</logo>
-                    <seuil>45</seuil>
+                    <seuil>1000</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
@@ -90,7 +90,7 @@
                 <pallier>
                     <name>Gardien champion du monde</name>
                     <logo>img/products/1/8.png</logo>
-                    <seuil>50</seuil>
+                    <seuil>2500</seuil>
                     <idcible>1</idcible>
                     <ratio>3</ratio>
                     <typeratio>gain</typeratio>
@@ -99,7 +99,7 @@
                 <pallier>
                     <name>Meilleur gardien du monde</name>
                     <logo>img/products/1/9.png</logo>
-                    <seuil>60</seuil>
+                    <seuil>5000</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
                     <typeratio>vitesse</typeratio>
@@ -112,7 +112,7 @@
             <name>Défenseur</name>
             <logo>img/products/2.png</logo>
             <cout>70</cout>
-            <croissance>15</croissance>
+            <croissance>1.15</croissance>
             <revenu>10</revenu>
             <vitesse>10000</vitesse>
             <quantite>0</quantite>
@@ -207,7 +207,7 @@
             <name>Milieu de terrain</name>
             <logo>img/products/3.png</logo>
             <cout>720</cout>
-            <croissance>14</croissance>
+            <croissance>1.14</croissance>
             <revenu>540</revenu>
             <vitesse>15000</vitesse>
             <quantite>0</quantite>
@@ -302,7 +302,7 @@
             <name>Attaquant</name>
             <logo>img/products/4.png</logo>
             <cout>8640</cout>
-            <croissance>13</croissance>
+            <croissance>1.13</croissance>
             <revenu>4320</revenu>
             <vitesse>20000</vitesse>
             <quantite>0</quantite>
@@ -397,7 +397,7 @@
             <name>Entraineur</name>
             <logo>img/products/5.png</logo>
             <cout>103680</cout>
-            <croissance>12</croissance>
+            <croissance>1.12</croissance>
             <revenu>51840</revenu>
             <vitesse>25000</vitesse>
             <quantite>0</quantite>
@@ -492,7 +492,7 @@
             <name>Stade</name>
             <logo>img/products/6.png</logo>
             <cout>1244160</cout>
-            <croissance>11</croissance>
+            <croissance>1.11</croissance>
             <revenu>6220800</revenu>
             <vitesse>30000</vitesse>
             <quantite>0</quantite>
