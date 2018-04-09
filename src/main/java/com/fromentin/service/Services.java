@@ -213,23 +213,18 @@ public class Services {
     }
 
     private void majScore(World world) {
-        System.out.println("-- MONEY :" + world.getMoney());
         long now = System.currentTimeMillis();
         for (ProductType p : world.getProducts().getProduct()) {
             if (p.isManagerUnlocked() && p.getQuantite() > 0) {
                 long number = Math.floorDiv((now - world.getLastupdate() + p.getVitesse() - p.getTimeleft()), p.getVitesse());
                 long tempsRestant = Math.floorMod((now - world.getLastupdate() + p.getVitesse() - p.getTimeleft()), p.getVitesse());
-                System.out.println(tempsRestant);
                 world.setMoney(world.getMoney() + (p.getRevenu() * (1 + world.getActiveangels() * world.getAngelbonus() / 100)) * number);
                 world.setScore(world.getScore() + (p.getRevenu() * (1 + world.getActiveangels() * world.getAngelbonus() / 100)) * number);
-
                 p.setTimeleft(tempsRestant);
-
                 if (p.getTimeleft() < 0) {
                     p.setTimeleft(0);
                 }
             } else {
-                System.out.println("MONEY :" + world.getMoney());
                 if (p.getTimeleft() > 0 && p.getTimeleft() <= now - world.getLastupdate()) {
                     world.setMoney(world.getMoney() + (p.getRevenu() * (1 + world.getActiveangels() * world.getAngelbonus() / 100)));
                     world.setScore(world.getScore() + (p.getRevenu() * (1 + world.getActiveangels() * world.getAngelbonus() / 100)));
